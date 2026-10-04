@@ -1,0 +1,87 @@
+/* ===== 1. NAV (Alba) ===== */
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.nav {
+    background-color: #0A5383;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.navLogo {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+    border: 3px solid #FFAA00;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+.navLogo:hover {
+    transform: scale(1.1) rotate(-8deg);
+}
+
+.navMenu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navMenu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navMenu a:hover {
+    background-color: #FFAA00;
+    color: #0A5383;
+}
+
+.navBotones {
+    display: flex;
+    gap: 12px;
+}
+
+.btnContacto,
+.btnInicio {
+    padding: 8px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+}
+
+.btnContacto:hover,
+.btnInicio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btnContacto {
+    background-color: white;
+    color: #FFAA00;
+}
+
+.btnInicio {
+    background-color: #FFAA00;
+    color: white;
+}
+
+.btnInicio:hover {
+    background-color: #EFB026;
+}
