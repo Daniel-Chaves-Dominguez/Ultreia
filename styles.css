@@ -1,8 +1,15 @@
 /* ===== 1. NAV (Alba) ===== */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+html, body {
+    height: 100%;
+}
+
 
 .nav {
     background-color: #0A5383;
@@ -21,7 +28,7 @@ body {
     border: 3px solid #FFAA00;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     transition: transform 0.4s;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .navLogo:hover {
@@ -85,3 +92,179 @@ body {
 .btnInicio:hover {
     background-color: #EFB026;
 }
+
+
+
+
+
+
+
+.siteFooter {
+    background-color: #0A5383; 
+    color: #ffffff;
+    border-top: 4px solid #FFAA00;
+    padding: 2.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: 2.8fr 2.8fr 2.8fr 2fr; 
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1rem 1.8rem 1rem;
+    align-items: start; 
+}
+
+.footerBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerLogo {
+    width: 116px;
+    height: 116px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+    border: 3px solid #FFAA00;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s;
+    cursor: pointer; 
+}
+
+
+.footerLogo:hover {
+    transform: scale(1.1) rotate(-8deg);
+}
+
+.footerSocials a { 
+    color: #fdfdfd; 
+    font-size: 1.1rem; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    width: 44px;  
+    height: 44px; 
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footerSocials a:hover {
+    color: #efb026; 
+    transform: scale(1.15); 
+}
+
+.footerTagline, 
+.footerLogoText {
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.footerTitle {
+    color: #FFAA00; 
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLinks li {
+    margin-bottom: 0.6rem;
+}
+
+.footerLinks a {
+    color: #E2E8F0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+    color: #FFAA00;
+}
+
+.footerBottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15); 
+    padding: 1rem 0 0.4rem 0;
+    text-align: center;
+}
+
+.footerCopy {
+    margin: 0 0 0.2rem 0;
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+
+.copyrightLink {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.copyrightLink:hover {
+    color: #FFAA00;
+    text-decoration: none;
+}
+
+.footerCredits {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #A7CEE8; 
+}
+
+.footerCredits span {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.footerCredits a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footerCredits a:hover {
+    color: #FFAA00;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .footerBottomContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerContainer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footerBrand {
+        align-items: center;
+    }
+}
+
+
