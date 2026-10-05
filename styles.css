@@ -174,6 +174,134 @@ html, body {
 }
 
 
+/* ===== 4. QUÉ NECESITAS (Daniel) ===== */
+.necesitas {
+    background-color: white;
+    padding: 20px 25px 30px 25px;
+}
+
+.necesitas h2 {
+    color: #0A5383;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.necesitasSubtitulo {
+    color: #3A91CB;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.necesitasTarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.tarjeta {
+    display: flex;
+    gap: 12px;
+    padding: 12px 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.tarjetaIcono {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+}
+
+.iconoRojo {
+    background-color: #EF3F42;
+}
+
+.iconoVerde {
+    background-color: #5E9459;
+}
+
+.iconoNaranja {
+    background-color: #FFAA00;
+}
+
+.iconoAzul {
+    background-color: #0A5383;
+}
+
+/* al pasar el ratón por la tarjeta el icono da un saltito */
+.tarjeta:hover .tarjetaIcono {
+    animation: saltito 0.6s;
+}
+
+@keyframes saltito {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    30% {
+        transform: scale(1.2) rotate(-10deg);
+    }
+    60% {
+        transform: scale(0.95) rotate(8deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.tarjetaTexto h3 {
+    color: #0A5383;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.tarjetaTexto p {
+    color: #0A5383;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.tarjetaFlecha {
+    display: inline-block;
+    color: #0A5383;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+/* la flecha se mueve a la derecha */
+.tarjeta:hover .tarjetaFlecha {
+    transform: translateX(6px);
+}
+
+@media (max-width: 768px) {
+    .necesitasTarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .necesitasTarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 
 
