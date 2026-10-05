@@ -243,7 +243,7 @@ html, body {
     background-color: #0A5383;
 }
 
-/* al pasar el ratón por la tarjeta el icono da un saltito */
+
 .tarjeta:hover .tarjetaIcono {
     animation: saltito 0.6s;
 }
@@ -284,7 +284,7 @@ html, body {
     transition: transform 0.3s;
 }
 
-/* la flecha se mueve a la derecha */
+
 .tarjeta:hover .tarjetaFlecha {
     transform: translateX(6px);
 }
@@ -303,7 +303,7 @@ html, body {
 
 
 /* ===== 7. INCIDENCIA (Daniel) ===== */
-/* fuente que se usa en el diseño */
+
 .incidencia h2,
 .incidencia p,
 .btnIncidencia {
@@ -316,12 +316,12 @@ html, body {
     background-color: white;
     border-radius: 10px;
     margin: 0 30px 30px 17px;
-    /* misma forma que la imagen (2278 x 464) para que no se corte */
+    
     aspect-ratio: 2278 / 464;
     padding: 30px 31px;
 }
 
-/* la imagen ocupa toda la sección y se queda detrás del texto */
+
 .incidenciaFondo {
     position: absolute;
     top: 0;
@@ -330,7 +330,7 @@ html, body {
     height: 100%;
     object-fit: cover;
     object-position: bottom;
-    /* en el diseño la imagen se ve más clarita */
+
     opacity: 0.7;
 }
 
@@ -379,7 +379,7 @@ html, body {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
-/* al pasar el ratón el altavoz se mueve como si sonara */
+
 .btnIncidencia:hover i {
     animation: sonar 0.5s infinite;
 }
