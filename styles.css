@@ -94,6 +94,85 @@ html, body {
 }
 
 
+/* ===== 3. SALUDO DEL PEREGRINO (Daniel) ===== */
+.saludo {
+    background-color: #0A5383;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 80px 15px 80px;
+}
+
+.saludoTexto {
+    width: 320px;
+    text-align: center;
+    color: white;
+}
+
+.saludoTexto h2 {
+    color: #FFAA00;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.saludoFrase {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.saludoPequeno {
+    font-size: 9px;
+}
+
+.cartelAmarillo,
+.cartelBlanco {
+    width: 165px;
+    padding: 15px;
+    border-radius: 8px;
+    color: #0A5383;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.cartelAmarillo {
+    background-color: #FFAA00;
+    transform: rotate(-12deg);
+}
+
+.cartelBlanco {
+    background-color: white;
+    transform: rotate(12deg);
+}
+
+.cartelAmarillo h3,
+.cartelBlanco h3 {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.cartelAmarillo p,
+.cartelBlanco p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cartelAmarillo p {
+    padding-left: 10px;
+}
+
+.cartelBlanco p {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .saludo {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+}
+
 
 
 
