@@ -302,6 +302,120 @@ html, body {
 }
 
 
+/* ===== 7. INCIDENCIA (Daniel) ===== */
+/* fuente que se usa en el diseño */
+.incidencia h2,
+.incidencia p,
+.btnIncidencia {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.incidencia {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 30px 30px 17px;
+    /* misma forma que la imagen (2278 x 464) para que no se corte */
+    aspect-ratio: 2278 / 464;
+    padding: 30px 31px;
+}
+
+/* la imagen ocupa toda la sección y se queda detrás del texto */
+.incidenciaFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    /* en el diseño la imagen se ve más clarita */
+    opacity: 0.7;
+}
+
+.incidenciaTexto {
+    position: relative;
+}
+
+.incidenciaTexto h2 {
+    color: #0A5383;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.incidenciaTexto p {
+    color: #3A91CB;
+    font-size: 12.5px;
+    line-height: 16px;
+}
+
+.btnIncidencia {
+    position: absolute;
+    left: 55%;
+    top: 38%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px;
+    background-color: #0A5383;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.btnIncidencia i {
+    font-size: 22px;
+}
+
+.btnIncidencia:hover {
+    background-color: #FFAA00;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* al pasar el ratón el altavoz se mueve como si sonara */
+.btnIncidencia:hover i {
+    animation: sonar 0.5s infinite;
+}
+
+@keyframes sonar {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .incidencia {
+        aspect-ratio: auto;
+        margin: 0 15px 30px 15px;
+        padding: 25px 20px;
+    }
+
+    .btnIncidencia {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: inline-flex;
+        margin-top: 20px;
+    }
+}
+
+
 
 
 
