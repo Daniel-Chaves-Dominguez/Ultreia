@@ -313,14 +313,14 @@ html, body {
 
 .themeGreen .badgeIcon,
 .themeGreen .badgeIconSmall {
-    background-color: #2D6A4F;
+    background-color: #5E9459;
 }
 
 
 .themeGreen .pillCategory,
 .themeGreen .featureIcon {
     background-color: white;
-    color: #2D6A4F;
+    color: #5E9459;
 }
 
 
@@ -329,13 +329,13 @@ html, body {
 .themeGreen .cardBackTitle,
 .themeGreen .featureText strong,
 .themeGreen .btnBack {
-    color: #2D6A4F;
+    color: #5E9459;
 }
 
 
 .themeGreen .btnArrow {
-    border: 2px solid #2D6A4F;
-    color: #2D6A4F;
+    border: 2px solid #5E9459;
+    color: #5E9459;
 }
 
 
@@ -346,8 +346,8 @@ html, body {
 
 .themeGreen:hover .btnArrow {
     background-color: #E8F5E9;
-    border-color: #2D6A4F;
-    color: #2D6A4F;
+    border-color: #5E9459;
+    color: #5E9459;
 }
 
 
@@ -355,7 +355,7 @@ html, body {
 .themeOrange .badgeIconSmall,
 .themeYellow .badgeIcon,
 .themeYellow .badgeIconSmall {
-    background-color: #D97706;
+    background-color: #FFAA00;
 }
 
 
@@ -364,7 +364,7 @@ html, body {
 .themeYellow .pillCategory,
 .themeYellow .featureIcon {
     background-color: white;
-    color: #92400E;
+    color: #FFAA00;
 }
 
 
@@ -378,14 +378,14 @@ html, body {
 .themeYellow .cardBackTitle,
 .themeYellow .featureText strong,
 .themeYellow .btnBack {
-    color: #92400E;
+    color: #FFAA00;
 }
 
 
 .themeOrange .btnArrow,
 .themeYellow .btnArrow {
-    border: 2px solid #92400E;
-    color: #92400E;
+    border: 2px solid #FFAA00;
+    color: #FFAA00;
 }
 
 
@@ -398,8 +398,8 @@ html, body {
 .themeOrange:hover .btnArrow,
 .themeYellow:hover .btnArrow {
     background-color: #FEF3C7;
-    border-color: #92400E;
-    color: #92400E;
+    border-color: #FFAA00;
+    color: #FFAA00;
 }
 
 
@@ -407,7 +407,7 @@ html, body {
 .themeRed .badgeIconSmall,
 .themeRedHeart .badgeIcon,
 .themeRedHeart .badgeIconSmall {
-    background-color: #DC2626;
+    background-color: #C53030;
 }
 
 
@@ -416,7 +416,7 @@ html, body {
 .themeRedHeart .pillCategory,
 .themeRedHeart .featureIcon {
     background-color: white;
-    color: #991B1B;
+    color: #C53030;
 }
 
 
@@ -430,14 +430,14 @@ html, body {
 .themeRedHeart .cardBackTitle,
 .themeRedHeart .featureText strong,
 .themeRedHeart .btnBack {
-    color: #991B1B;
+    color: #C53030;
 }
 
 
 .themeRed .btnArrow,
 .themeRedHeart .btnArrow {
-    border: 2px solid #991B1B;
-    color: #991B1B;
+    border: 2px solid #C53030;
+    color: #C53030;
 }
 
 
