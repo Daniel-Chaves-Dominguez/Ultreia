@@ -97,6 +97,7 @@ html, body {
 /* ===== 3. SALUDO DEL PEREGRINO (Daniel) ===== */
 .saludo {
     background-color: #0A5383;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -177,6 +178,7 @@ html, body {
 /* ===== 4. QUÉ NECESITAS (Daniel) ===== */
 .necesitas {
     background-color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     padding: 20px 25px 30px 25px;
 }
 
@@ -303,15 +305,9 @@ html, body {
 
 
 /* ===== 7. INCIDENCIA (Daniel) ===== */
-
-.incidencia h2,
-.incidencia p,
-.btnIncidencia {
-    font-family: 'Fira Sans', sans-serif;
-}
-
 .incidencia {
     position: relative;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
