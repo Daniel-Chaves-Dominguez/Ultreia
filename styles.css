@@ -79,6 +79,12 @@ html, body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.btnContacto:active,
+.btnInicio:active {
+    transform: scale(0.92);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .btnContacto {
     background-color: white;
     color: #FFAA00;
@@ -91,6 +97,106 @@ html, body {
 
 .btnInicio:hover {
     background-color: #EFB026;
+}
+
+
+/* ===== 2. HERO (Alba) ===== */
+.hero {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    border-top: 5px solid #FFAA00;
+    border-bottom: 5px solid #FFAA00;
+}
+
+.heroImagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroContenido {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroTitulo {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #0A5383;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    animation: heroEntrarIzquierda 1s ease-out both;
+}
+
+.heroDestacado {
+    display: inline-block;
+    background-color: #0A5383;
+    color: white;
+    padding: 6px 24px;
+    border-radius: 10px;
+    margin-top: 8px;
+    text-shadow: none;
+    animation: heroRevelar 1s ease-out 0.8s both;
+}
+
+.heroBotones {
+    display: flex;
+    gap: 16px;
+    animation: heroRebote 0.8s ease-out 1.6s both;
+}
+
+.heroBotones .btnContacto,
+.heroBotones .btnInicio {
+    font-size: 22px;
+    padding: 12px 36px;
+    border-radius: 10px;
+}
+
+/* 1. El título entra desde la izquierda */
+@keyframes heroEntrarIzquierda {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 2. El recuadro "entre todos" se dibuja de izquierda a derecha */
+@keyframes heroRevelar {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* 3. Los botones aparecen con rebote */
+@keyframes heroRebote {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 
@@ -412,10 +518,7 @@ html, body {
 }
 
 
-
-
-
-
+/* ===== 8. FOOTER (Melissa) ===== */
 .siteFooter {
     background-color: #0A5383; 
     color: #ffffff;
@@ -583,5 +686,3 @@ html, body {
         align-items: center;
     }
 }
-
-
