@@ -6,9 +6,11 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+
 html, body {
     height: 100%;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -413,6 +415,409 @@ html {
     }
 }
 
+
+.sectionHeader {
+    max-width: 1400px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+
+.sectionTitle {
+    color: #0A5383;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+
+.sectionSubtitle {
+    color: #64748B;
+    font-size: 1rem;
+}
+
+.cardsSection {
+    padding: 3rem 1.5rem;
+    background-color: #f4f7fb;
+}
+
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 360px;
+    perspective: 1200px;
+    cursor: pointer;
+}
+
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    border-radius: 24px;
+}
+
+.cardContainer:hover .cardInner {
+    transform: rotateY(-180deg);
+}
+
+.cardFront,
+.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(10, 83, 131, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardImageWrapper {
+    position: relative;
+    height: 260px;
+    width: 100%;
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badgeIcon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.cardBody {
+    padding: 1rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.pillCategory {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.3rem 0.9rem;
+    border-radius:  22px;
+    margin-top: -2.4rem;
+    margin-bottom: 0.5rem;
+    z-index: 3;
+}
+
+.cardTitle {
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0 0 0.5rem 0;
+}
+
+.cardDesc {
+    color: #64748B;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0 0 1.4rem 0;
+}
+
+.cardAction {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.btnArrow {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.cardBack {
+    transform: rotateY(180deg);
+    padding: 1.8rem;
+    justify-content: space-between;
+}
+
+.cardBackHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.badgeIconSmall {
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.cardBackTitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.featuresList {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.featuresList li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.featureIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.featureText strong {
+    display: block;
+    font-size: 0.85rem;
+}
+
+.featureText p {
+    margin: 0;
+    color: #64748B;
+    font-size: 0.78rem;
+    line-height: 1.3;
+}
+
+.cardBackFooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnBack {
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.themeBlue .badgeIcon,
+.themeBlue .badgeIconSmall {
+    background-color: #0A5383;
+}
+
+.themeBlue .pillCategory,
+.themeBlue .featureIcon {
+    background-color: white;
+    color: #0A5383;
+}
+
+.themeBlue .cardTitle,
+.themeBlue .cardAction,
+.themeBlue .cardBackTitle,
+.themeBlue .featureText strong,
+.themeBlue .btnBack {
+    color: #0A5383;
+}
+
+.themeBlue .btnArrow {
+    border: 2px solid #0A5383;
+    color: #0A5383;
+}
+
+.themeBlue .cardBack {
+    background: linear-gradient(135deg, #f0f7ff 10%, #dde9f7 80%);
+}
+
+.themeBlue:hover .btnArrow {
+    background-color: #E0F2FE;
+    border-color: #0A5383;
+    color: #0A5383;
+}
+
+.themeGreen .badgeIcon,
+.themeGreen .badgeIconSmall {
+    background-color: #5E9459;
+}
+
+.themeGreen .pillCategory,
+.themeGreen .featureIcon {
+    background-color: white;
+    color: #5E9459;
+}
+
+.themeGreen .cardTitle,
+.themeGreen .cardAction,
+.themeGreen .cardBackTitle,
+.themeGreen .featureText strong,
+.themeGreen .btnBack {
+    color: #5E9459;
+}
+
+.themeGreen .btnArrow {
+    border: 2px solid #5E9459;
+    color: #5E9459;
+}
+
+.themeGreen .cardBack {
+    background: linear-gradient(135deg, #f6faf1 10%, #e2edd6 80%);
+}
+
+.themeGreen:hover .btnArrow {
+    background-color: #E8F5E9;
+    border-color: #5E9459;
+    color: #5E9459;
+}
+
+.themeOrange .badgeIcon,
+.themeOrange .badgeIconSmall,
+.themeYellow .badgeIcon,
+.themeYellow .badgeIconSmall {
+    background-color: #FFAA00;
+}
+
+.themeOrange .pillCategory,
+.themeOrange .featureIcon,
+.themeYellow .pillCategory,
+.themeYellow .featureIcon {
+    background-color: white;
+    color: #FFAA00;
+}
+
+.themeOrange .cardTitle,
+.themeOrange .cardAction,
+.themeOrange .cardBackTitle,
+.themeOrange .featureText strong,
+.themeOrange .btnBack,
+.themeYellow .cardTitle,
+.themeYellow .cardAction,
+.themeYellow .cardBackTitle,
+.themeYellow .featureText strong,
+.themeYellow .btnBack {
+    color: #FFAA00;
+}
+
+.themeOrange .btnArrow,
+.themeYellow .btnArrow {
+    border: 2px solid #FFAA00;
+    color: #FFAA00;
+}
+
+.themeOrange .cardBack,
+.themeYellow .cardBack {
+    background: linear-gradient(135deg, #faf9f0 10%, #fef7dc 80%);
+}
+
+.themeOrange:hover .btnArrow,
+.themeYellow:hover .btnArrow {
+    background-color: #FEF3C7;
+    border-color: #FFAA00;
+    color: #FFAA00;
+}
+
+.themeRed .badgeIcon,
+.themeRed .badgeIconSmall,
+.themeRedHeart .badgeIcon,
+.themeRedHeart .badgeIconSmall {
+    background-color: #C53030;
+}
+
+.themeRed .pillCategory,
+.themeRed .featureIcon,
+.themeRedHeart .pillCategory,
+.themeRedHeart .featureIcon {
+    background-color: white;
+    color: #C53030;
+}
+
+.themeRed .cardTitle,
+.themeRed .cardAction,
+.themeRed .cardBackTitle,
+.themeRed .featureText strong,
+.themeRed .btnBack,
+.themeRedHeart .cardTitle,
+.themeRedHeart .cardAction,
+.themeRedHeart .cardBackTitle,
+.themeRedHeart .featureText strong,
+.themeRedHeart .btnBack {
+    color: #C53030;
+}
+
+.themeRed .btnArrow,
+.themeRedHeart .btnArrow {
+    border: 2px solid #C53030;
+    color: #C53030;
+}
+
+.themeRed .cardBack,
+.themeRedHeart .cardBack {
+    background: linear-gradient(135deg, #fbf5f5 10%, #fae6e6 80%);
+}
+
+.themeRed:hover .btnArrow,
+.themeRedHeart:hover .btnArrow {
+    background-color: #FEE2E2;
+    border-color: #991B1B;
+    color: #991B1B;
+}
+
+@media (max-width: 1200px) {
+    .cardsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cardsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+   
 
 /* ===== 6. TABLÓN + MAPA (Alba) ===== */
 .comunidad {
