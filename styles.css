@@ -35,6 +35,8 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     transition: transform 0.4s;
     cursor: pointer; 
+    margin-left: 36px; 
+    box-sizing: border-box;
 }
 
 .navLogo:hover {
@@ -122,22 +124,25 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 .heroContenido {
     position: relative;
     z-index: 1;
     height: 100%;
-    padding: 40px 60px;
+    padding: 50px 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .heroTitulo {
     font-size: 72px;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.05;
     color: #0A5383;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     animation: heroEntrarIzquierda 1s ease-out both;
@@ -147,9 +152,9 @@ html {
     display: inline-block;
     background-color: #0A5383;
     color: white;
-    padding: 6px 24px;
+    padding: 6px 20px;
     border-radius: 10px;
-    margin-top: 8px;
+    margin-top: 6px;
     text-shadow: none;
     animation: heroRevelar 1s ease-out 0.8s both;
 }
@@ -212,66 +217,91 @@ html {
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px 80px 15px 80px;
+    justify-content: space-between;
+    padding: 30px 90px;
+    margin: 0 auto 2rem auto;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .saludoTexto {
-    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center; 
     text-align: center;
     color: white;
 }
 
+.saludoTexto p {
+    white-space: nowrap;
+    margin: 4px 0;
+}
+
 .saludoTexto h2 {
     color: #FFAA00;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin-bottom: 8px;
 }
 
 .saludoFrase {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     margin-bottom: 6px;
 }
 
 .saludoPequeno {
-    font-size: 9px;
+    font-size: 12px;
+    font-style: italic;
+    color: #f4b22d;
 }
 
 .cartelAmarillo,
 .cartelBlanco {
-    width: 165px;
-    padding: 15px;
-    border-radius: 8px;
+    width: 160px;
+    padding: 14px 18px;
+    border-radius: 12px;
     color: #0A5383;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: center;  
+    text-align: center;       
 }
 
 .cartelAmarillo {
     background-color: #FFAA00;
-    transform: rotate(-12deg);
+    transform: rotate(-10deg);
 }
 
 .cartelBlanco {
     background-color: white;
-    transform: rotate(12deg);
+    transform: rotate(10deg);
 }
 
 .cartelAmarillo h3,
 .cartelBlanco h3 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
 }
 
 .cartelAmarillo p,
 .cartelBlanco p {
     font-size: 12px;
     font-weight: 700;
+    margin: 4px 0 0 0;
 }
 
 .cartelAmarillo p {
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .cartelBlanco p {
@@ -288,40 +318,48 @@ html {
 
 
 /* ===== 4. QUÉ NECESITAS (Daniel) ===== */
+
+
 .necesitas {
     background-color: white;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    padding: 20px 25px 30px 25px;
+    padding: 1.6rem 1.5rem 2rem 2rem;
+    max-width: 1460px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .necesitas h2 {
     color: #0A5383;
-    font-size: 22px;
+    font-size: 1.6rem;
     font-weight: 800;
-    margin-bottom: 8px;
+    margin-bottom: 0.2rem;
 }
 
 .necesitasSubtitulo {
-    color: #3A91CB;
-    font-size: 15px;
-    margin-bottom: 35px;
+    color: #64748B;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .necesitasTarjetas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .tarjeta {
     display: flex;
-    gap: 12px;
-    padding: 12px 15px;
+    gap: 16px;
+    padding: 1.5rem;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(10, 83, 131, 0.08);
     text-decoration: none;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+    align-items: center;
 }
 
 .tarjeta:hover {
@@ -330,15 +368,18 @@ html {
 }
 
 .tarjetaIcono {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 26px;
+    font-size: 30px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
 }
 
 .iconoRojo {
@@ -379,23 +420,23 @@ html {
 
 .tarjetaTexto h3 {
     color: #0A5383;
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 6px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 4px;
 }
 
 .tarjetaTexto p {
-    color: #0A5383;
-    font-size: 10px;
-    line-height: 1.5;
-    margin-bottom: 8px;
+    color: #64748B;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 6px;
 }
 
 .tarjetaFlecha {
     display: inline-block;
     color: #0A5383;
-    font-size: 16px;
-    transition: transform 0.3s;
+    font-size: 24px;
+    transition: transform 0.3s ease;
 }
 
 
@@ -424,7 +465,7 @@ html {
 
 .sectionTitle {
     color: #0A5383;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 0.2rem;
 }
@@ -531,7 +572,7 @@ html {
 }
 
 .cardTitle {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 800;
     line-height: 1.25;
     margin: 0 0 0.5rem 0;
@@ -539,7 +580,7 @@ html {
 
 .cardDesc {
     color: #64748B;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.4;
     margin: 0 0 1.4rem 0;
 }
@@ -764,7 +805,7 @@ html {
 .themeRed .badgeIconSmall,
 .themeRedHeart .badgeIcon,
 .themeRedHeart .badgeIconSmall {
-    background-color: #C53030;
+    background-color: #EF3F42;
 }
 
 .themeRed .pillCategory,
@@ -772,7 +813,7 @@ html {
 .themeRedHeart .pillCategory,
 .themeRedHeart .featureIcon {
     background-color: white;
-    color: #C53030;
+    color: #EF3F42;
 }
 
 .themeRed .cardTitle,
@@ -785,13 +826,13 @@ html {
 .themeRedHeart .cardBackTitle,
 .themeRedHeart .featureText strong,
 .themeRedHeart .btnBack {
-    color: #C53030;
+    color: #EF3F42;
 }
 
 .themeRed .btnArrow,
 .themeRedHeart .btnArrow {
-    border: 2px solid #C53030;
-    color: #C53030;
+    border: 2px solid #EF3F42;
+    color: #EF3F42;
 }
 
 .themeRed .cardBack,
@@ -817,15 +858,21 @@ html {
         grid-template-columns: 1fr;
     }
 }
-   
+
 
 /* ===== 6. TABLÓN + MAPA (Alba) ===== */
 .comunidad {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 30px;
-    padding: 20px 25px 40px 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1440px;
+    margin: 2rem auto 2rem auto;
+    padding: 1.2rem 1.5rem;
+    box-sizing: border-box;
+    padding-bottom: 2.5rem; 
+    border-bottom: 0.8px solid #eaeff6; 
 }
+
 
 .tablonCabecera,
 .mapaCabecera {
@@ -838,15 +885,15 @@ html {
 .tablon h2,
 .mapa h2 {
     color: #0A5383;
-    font-size: 22px;
+    font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 4px;
 }
 
 .tablonSubtitulo,
 .mapaSubtitulo {
-    color: #3A91CB;
-    font-size: 15px;
+    color: #64748B;
+    font-size: 1rem;
 }
 
 .tablonVerTodo {
@@ -932,7 +979,7 @@ html {
 }
 
 .publicacionTexto p {
-    color: #3A91CB;
+    color: #64748B;
     font-size: 13px;
 }
 
@@ -950,7 +997,7 @@ html {
     gap: 8px;
     padding: 8px 16px;
     border: 2px solid #0A5383;
-    border-radius: 10px;
+    border-radius: 24px;
     color: #0A5383;
     font-size: 14px;
     font-weight: 700;
@@ -983,20 +1030,22 @@ html {
 
 .mapaLeyenda {
     list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-content: end;
-    gap: 8px 18px;
-    margin-top: 14px;
+    grid-template-columns: repeat(4, auto); 
+    justify-content: center; 
+    gap: 12px 24px; 
 }
 
 .mapaLeyenda li {
     display: flex;
     align-items: center;
-    gap: 6px;
-    color: #0A5383;
+    gap: 8px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
+    color: #0A5383;
+    white-space: nowrap;
 }
 
 .punto {
@@ -1045,11 +1094,16 @@ html {
     font-family: 'Plus Jakarta Sans', sans-serif;
     overflow: hidden;
     background-color: white;
-    border-radius: 10px;
-    margin: 0 30px 30px 17px;
-    
+    border-radius: 24px;
     aspect-ratio: 2278 / 464;
-    padding: 30px 31px;
+    padding: 30px 40px;
+    max-width: 1400px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 
@@ -1061,25 +1115,31 @@ html {
     height: 100%;
     object-fit: cover;
     object-position: bottom;
-
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .incidenciaTexto {
     position: relative;
+    max-width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -30px;
 }
 
 .incidenciaTexto h2 {
     color: #0A5383;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    margin-right: 20px;
 }
 
 .incidenciaTexto p {
-    color: #3A91CB;
-    font-size: 12.5px;
-    line-height: 16px;
+    color: #64748B;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-right: 20px;
 }
 
 .btnIncidencia {
@@ -1090,13 +1150,13 @@ html {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 0 16px;
+    padding: 0 20px;
     background-color: #0A5383;
     color: white;
     font-size: 13px;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
