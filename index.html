@@ -15,116 +15,279 @@
 </head>
 <body>
 
-    <!-- ===== 1. NAV (Alba) ===== -->
     <header class="nav">
         <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791113078/image_ubfnbw.png" alt="Logo Ultreia" class="navLogo">
 
         <ul class="navMenu">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#mapa">Mapa</a></li>
-            <li><a href="#comunidad">Comunidad</a></li>
-            <li><a href="#">Ayuda</a></li>
+            <li><a href="#map">Mapa</a></li>
+            <li><a href="#community">Comunidad</a></li>
+            <li><a href="#help">Ayuda</a></li>
         </ul>
 
-        <div class="navBotones">
-            <a href="#" class="btnContacto">Contacto</a>
-            <a href="#" class="btnInicio">Inicio</a>
+        <div class="navButtons">
+            <a href="#" class="btnContact">Contacto</a>
+            <a href="#" class="btnHome">Inicio</a>
         </div>
     </header>
 
-    <!-- ===== 2. HERO (Alba) ===== -->
     <section class="hero">
-        <img src="https://res.cloudinary.com/duzljw2pp/image/upload/v1790238465/copy_of_camino-de-santiago_zelztu.webp" alt="Peregrino caminando por el Camino de Santiago" class="heroImagen">
+        <img src="https://res.cloudinary.com/duzljw2pp/image/upload/v1790238465/copy_of_camino-de-santiago_zelztu.webp" alt="Peregrino caminando por el Camino de Santiago" class="heroImage">
 
-        <div class="heroContenido">
-            <h1 class="heroTitulo">
+        <div class="heroContent">
+            <h1 class="heroTitle">
                 El Camino lo<br>
                 hacemos<br>
-                <span class="heroDestacado">entre todos</span>
+                <span class="heroHighlight">entre todos</span>
             </h1>
 
-            <div class="heroBotones">
-                <a href="#" class="btnContacto">Contacto</a>
-                <a href="#" class="btnInicio">Inicio</a>
+            <div class="heroButtons">
+                <a href="#" class="btnContact">Contacto</a>
+                <a href="#" class="btnHome">Inicio</a>
             </div>
         </div>
     </section>
 
-    <!-- ===== 3. SALUDO DEL PEREGRINO (Daniel) ===== -->
-    <section class="saludo">
-        <div class="cartelAmarillo">
+    <section class="greeting">
+        <div class="yellowSign">
             <h3>¡Ultreia!</h3>
             <p>¡Más allá!</p>
         </div>
 
-        <div class="saludoTexto">
+        <div class="greetingText">
             <h2>EL SALUDO DEL PEREGRINO</h2>
-            <p class="saludoFrase">Así se daban ánimos los peregrinos en la Edad Media.</p> 
+            <p class="greetingPhrase">Así se daban ánimos los peregrinos en la Edad Media.</p>
             <p>Uno decía <<¡Ultreia!>> y el otro respondía <<’Et suseia!>>.</p>
-            <p class="saludoPequeno">Hoy lo seguimos diciendo: nadie hace el Camino solo.</p>
+            <p class="greetingSmall">Hoy lo seguimos diciendo: nadie hace el Camino solo.</p>
         </div>
 
-        <div class="cartelBlanco">
+        <div class="whiteSign">
             <h3>¡Et suseia!</h3>
             <p>¡Y más arriba!</p>
         </div>
     </section>
 
-    <!-- ===== 4. QUÉ NECESITAS (Daniel) ===== -->
-    <section class="necesitas">
+    <section class="needs" id="help">
         <h2>¿Qué necesitas?</h2>
-        <p class="necesitasSubtitulo">Selecciona lo que buscas o lo que puedes ofrecer. Juntos hagamos el camino más fácil,</p>
+        <p class="needsSubtitle">Selecciona lo que buscas o lo que puedes ofrecer. Juntos hagamos el camino más fácil.</p>
 
-        <div class="necesitasTarjetas">
-            <a href="#" class="tarjeta" id="necesitoAyuda">
-                <div class="tarjetaIcono iconoRojo">
-                    <i class="ri-alert-line"></i>
-                </div>
-                <div class="tarjetaTexto">
-                    <h3>Necesito ayuda</h3>
-                    <p>Si tienes una incidencia o necesitas apoyo durante tu etapa.</p>
-                    <i class="ri-arrow-right-circle-line tarjetaFlecha"></i>
-                </div>
-            </a>
+        <div class="needsCards">
+            <div class="needCard" id="needHelp">
+                <div class="needCardInner">
+                    <div class="needCardFront">
+                        <div class="needIcon iconRed">
+                            <i class="ri-alert-line"></i>
+                        </div>
+                        <h3>Necesito ayuda</h3>
+                        <p>Si tienes una incidencia o necesitas apoyo en tu etapa.</p>
+                        <i class="ri-arrow-right-circle-line needArrow"></i>
+                    </div>
 
-            <a href="#" class="tarjeta" id="quieroAyudar">
-                <div class="tarjetaIcono iconoVerde">
-                    <i class="ri-user-line"></i>
-                </div>
-                <div class="tarjetaTexto">
-                    <h3>Quiero ayudar</h3>
-                    <p>Participa en iniciativas, voluntariado o comparte lo que sabes.</p>
-                    <i class="ri-arrow-right-circle-line tarjetaFlecha"></i>
-                </div>
-            </a>
+                    <div class="needCardBack">
+                        <div class="needFormHeader">
+                            <div class="needIconSmall iconRed">
+                                <i class="ri-alert-line"></i>
+                            </div>
+                            <div>
+                                <h3>Necesito ayuda</h3>
+                                <p>Cuéntanos qué te pasa y te contactaremos lo antes posible</p>
+                            </div>
+                        </div>
 
-            <a href="#" class="tarjeta" id="quieroOfrecer">
-                <div class="tarjetaIcono iconoNaranja">
-                    <i class="ri-home-4-line"></i>
+                        <form class="needForm">
+                            <div class="formRow">
+                                <div class="formGroup">
+                                    <label for="helpName">Nombre</label>
+                                    <input type="text" id="helpName">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="helpPhone">Teléfono</label>
+                                    <input type="tel" id="helpPhone">
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="formGroup">
+                                    <label for="helpPlace">¿Dónde estás?</label>
+                                    <input type="text" id="helpPlace">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="helpType">Tipo de incidencia</label>
+                                    <input type="text" id="helpType">
+                                </div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="helpMessage">Mensaje</label>
+                                <textarea id="helpMessage"></textarea>
+                            </div>
+                            <button type="submit" class="btnSend">Enviar solicitud</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="tarjetaTexto">
-                    <h3>Quiero ofrecer</h3>
-                    <p>Publica alojamiento, servicios, comida o espacios para peregrinos.</p>
-                    <i class="ri-arrow-right-circle-line tarjetaFlecha"></i>
-                </div>
-            </a>
+            </div>
 
-            <a href="#" class="tarjeta" id="noCaminoSolo">
-                <div class="tarjetaIcono iconoAzul">
-                    <i class="ri-group-line"></i>
+            <div class="needCard" id="wantToHelp">
+                <div class="needCardInner">
+                    <div class="needCardFront">
+                        <div class="needIcon iconGreen">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <h3>Quiero ayudar</h3>
+                        <p>Participa en iniciativas, voluntariado o comparte lo que sabes.</p>
+                        <i class="ri-arrow-right-circle-line needArrow"></i>
+                    </div>
+
+                    <div class="needCardBack">
+                        <div class="needFormHeader">
+                            <div class="needIconSmall iconGreen">
+                                <i class="ri-user-line"></i>
+                            </div>
+                            <div>
+                                <h3>Quiero ayudar</h3>
+                                <p>Cuéntanos cómo te gustaría colaborar con otros peregrinos</p>
+                            </div>
+                        </div>
+
+                        <form class="needForm">
+                            <div class="formRow">
+                                <div class="formGroup">
+                                    <label for="volunteerName">Nombre</label>
+                                    <input type="text" id="volunteerName">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="volunteerPhone">Teléfono</label>
+                                    <input type="tel" id="volunteerPhone">
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="formGroup">
+                                    <label for="volunteerPlace">¿Dónde estás?</label>
+                                    <input type="text" id="volunteerPlace">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="volunteerType">¿Cómo quieres ayudar?</label>
+                                    <input type="text" id="volunteerType">
+                                </div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="volunteerMessage">Mensaje</label>
+                                <textarea id="volunteerMessage"></textarea>
+                            </div>
+                            <button type="submit" class="btnSend">Quiero colaborar</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="tarjetaTexto">
-                    <h3>No camino solo</h3>
-                    <p>Encuentra compañeros de ruta y comparte la experiencia.</p>
-                    <i class="ri-arrow-right-circle-line tarjetaFlecha"></i>
+            </div>
+
+            <div class="needCard" id="wantToOffer">
+                <div class="needCardInner">
+                    <div class="needCardFront">
+                        <div class="needIcon iconOrange">
+                            <i class="ri-home-4-line"></i>
+                        </div>
+                        <h3>Quiero ofrecer</h3>
+                        <p>Publica alojamiento, servicios o comida para peregrinos.</p>
+                        <i class="ri-arrow-right-circle-line needArrow"></i>
+                    </div>
+
+                    <div class="needCardBack">
+                        <div class="needFormHeader">
+                            <div class="needIconSmall iconOrange">
+                                <i class="ri-home-4-line"></i>
+                            </div>
+                            <div>
+                                <h3>Quiero ofrecer</h3>
+                                <p>Cuéntanos qué puedes ofrecer a los peregrinos</p>
+                            </div>
+                        </div>
+
+                        <form class="needForm">
+                            <div class="formRow">
+                                <div class="formGroup">
+                                    <label for="offerName">Nombre</label>
+                                    <input type="text" id="offerName">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="offerPhone">Teléfono</label>
+                                    <input type="tel" id="offerPhone">
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="formGroup">
+                                    <label for="offerPlace">¿Dónde está?</label>
+                                    <input type="text" id="offerPlace">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="offerType">¿Qué ofreces?</label>
+                                    <input type="text" id="offerType">
+                                </div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="offerMessage">Mensaje</label>
+                                <textarea id="offerMessage"></textarea>
+                            </div>
+                            <button type="submit" class="btnSend">Publicar oferta</button>
+                        </form>
+                    </div>
                 </div>
-            </a>
+            </div>
+
+            <div class="needCard" id="notWalkingAlone">
+                <div class="needCardInner">
+                    <div class="needCardFront">
+                        <div class="needIcon iconBlue">
+                            <i class="ri-group-line"></i>
+                        </div>
+                        <h3>No camino solo</h3>
+                        <p>Encuentra compañeros de ruta y comparte la experiencia.</p>
+                        <i class="ri-arrow-right-circle-line needArrow"></i>
+                    </div>
+
+                    <div class="needCardBack">
+                        <div class="needFormHeader">
+                            <div class="needIconSmall iconBlue">
+                                <i class="ri-group-line"></i>
+                            </div>
+                            <div>
+                                <h3>No camino solo</h3>
+                                <p>Cuéntanos tu ruta y te pondremos en contacto con otros peregrinos</p>
+                            </div>
+                        </div>
+
+                        <form class="needForm">
+                            <div class="formRow">
+                                <div class="formGroup">
+                                    <label for="companyName">Nombre</label>
+                                    <input type="text" id="companyName">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="companyPhone">Teléfono</label>
+                                    <input type="tel" id="companyPhone">
+                                </div>
+                            </div>
+                            <div class="formRow">
+                                <div class="formGroup">
+                                    <label for="companyRoute">¿Qué camino haces?</label>
+                                    <input type="text" id="companyRoute">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="companyDate">¿Cuándo empiezas?</label>
+                                    <input type="date" id="companyDate">
+                                </div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="companyMessage">Mensaje</label>
+                                <textarea id="companyMessage"></textarea>
+                            </div>
+                            <button type="submit" class="btnSend">Buscar compañeros</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ===== 5. CARDS (Melissa) ===== -->
-  
-  <section class="cardsSection">
+
+<section class="cardsSection">
         
         <header class="sectionHeader">
             <h2 class="sectionTitle">Nuestras 8 áreas de impacto</h2>
@@ -484,110 +647,105 @@
         </div>
     </section>
 
-    <!-- ===== 6. TABLÓN + MAPA (Alba) ===== -->
-    <section class="comunidad" id="comunidad">
+    <section class="community" id="community">
 
-        <!-- Tablón -->
-        <div class="tablon">
-            <div class="tablonCabecera">
+        <div class="board">
+            <div class="boardHeader">
                 <div>
                     <h2>Tablón comunitario</h2>
-                    <p class="tablonSubtitulo">Comparte, pide, ofrece... la comunidad te espera.</p>
+                    <p class="boardSubtitle">Comparte, pide, ofrece... la comunidad te espera.</p>
                 </div>
-                <a href="#" class="tablonVerTodo">Ver todo</a>
+                <a href="#" class="boardSeeAll">Ver todo</a>
             </div>
 
-            <ul class="tablonLista">
-                <li class="publicacion">
-                    <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791283930/Gemini_Generated_Image_4uwjs64uwjs64uwj_ay3pap.jpg" alt="Foto de usuario" class="publicacionFoto">
-                    <span class="etiqueta etiquetaAviso">Aviso</span>
-                    <div class="publicacionTexto">
+            <ul class="boardList">
+                <li class="post">
+                    <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791283930/Gemini_Generated_Image_4uwjs64uwjs64uwj_ay3pap.jpg" alt="Foto de usuario" class="postPhoto">
+                    <span class="tag tagWarning">Aviso</span>
+                    <div class="postText">
                         <h3>Fuente sin agua</h3>
                         <p>Camino francés – Etapa Sarria – Portomarín</p>
                     </div>
-                    <span class="publicacionTiempo">Hace 2 horas</span>
+                    <span class="postTime">Hace 2 horas</span>
                 </li>
 
-                <li class="publicacion">
-                    <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791283987/Gemini_Generated_Image_vonnl3vonnl3vonn_bajcxj.jpg" alt="Foto de usuario" class="publicacionFoto">
-                    <span class="etiqueta etiquetaAyuda">Necesito ayuda</span>
-                    <div class="publicacionTexto">
+                <li class="post">
+                    <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791283987/Gemini_Generated_Image_vonnl3vonnl3vonn_bajcxj.jpg" alt="Foto de usuario" class="postPhoto">
+                    <span class="tag tagHelp">Necesito ayuda</span>
+                    <div class="postText">
                         <h3>Busco transporte de mochila</h3>
                         <p>Camino portugués – Tui</p>
                     </div>
-                    <span class="publicacionTiempo">Hace 4 horas</span>
+                    <span class="postTime">Hace 4 horas</span>
                 </li>
 
-                <li class="publicacion">
-                    <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791284055/Gemini_Generated_Image_ijwadpijwadpijwa_o7hbqi.jpg" alt="Foto de usuario" class="publicacionFoto">
-                    <span class="etiqueta etiquetaOfrecer">Quiero ofrecer</span>
-                    <div class="publicacionTexto">
+                <li class="post">
+                    <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791284055/Gemini_Generated_Image_ijwadpijwadpijwa_o7hbqi.jpg" alt="Foto de usuario" class="postPhoto">
+                    <span class="tag tagOffer">Quiero ofrecer</span>
+                    <div class="postText">
                         <h3>Espacio para guardar bicicletas</h3>
                         <p>Villafranca del Bierzo</p>
                     </div>
-                    <span class="publicacionTiempo">Hace 6 horas</span>
+                    <span class="postTime">Hace 6 horas</span>
                 </li>
 
-                <li class="publicacion">
-                    <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791284155/Gemini_Generated_Image_6ndhw76ndhw76ndh_glluyf.jpg" alt="Foto de usuario" class="publicacionFoto">
-                    <span class="etiqueta etiquetaIniciativa">Iniciativa</span>
-                    <div class="publicacionTexto">
+                <li class="post">
+                    <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791284155/Gemini_Generated_Image_6ndhw76ndhw76ndh_glluyf.jpg" alt="Foto de usuario" class="postPhoto">
+                    <span class="tag tagInitiative">Iniciativa</span>
+                    <div class="postText">
                         <h3>Limpieza del sendero</h3>
                         <p>Camino del Norte – Etapa Avilés – Gijón</p>
                     </div>
-                    <span class="publicacionTiempo">Hace 8 horas</span>
+                    <span class="postTime">Hace 8 horas</span>
                 </li>
             </ul>
         </div>
 
-        <!-- Mapa -->
-        <div class="mapa" id="mapa">
-            <div class="mapaCabecera">
+        <div class="map" id="map">
+            <div class="mapHeader">
                 <div>
                     <h2>Explora el camino</h2>
-                    <p class="mapaSubtitulo">Encuentra recursos</p>
+                    <p class="mapSubtitle">Encuentra recursos</p>
                 </div>
-                <a href="#" class="btnFiltros">
+                <a href="#" class="btnFilters">
                     <i class="ri-list-check"></i>
                     Filtros
                     <i class="ri-arrow-right-circle-line"></i>
                 </a>
             </div>
 
-            <div class="mapaImagenCaja">
-                <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791283634/image_1_tx0mob.png" alt="Mapa del Camino de Santiago con recursos para peregrinos" class="mapaImagen">
+            <div class="mapImageBox">
+                <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791283634/image_1_tx0mob.png" alt="Mapa del Camino de Santiago con recursos para peregrinos" class="mapImage">
             </div>
 
-            <ul class="mapaLeyenda">
-                <li><span class="punto puntoAlojamiento"></span>Alojamiento</li>
-                <li><span class="punto puntoMascotas"></span>Mascotas</li>
-                <li><span class="punto puntoAvisos"></span>Avisos</li>
-                <li><span class="punto puntoAlimentacion"></span>Alimentación</li>
-                <li><span class="punto puntoServicios"></span>Servicios</li>
-                <li><span class="punto puntoComunidad"></span>Comunidad</li>
-                <li><span class="punto puntoAccesibilidad"></span>Accesibilidad</li>
-                <li><span class="punto puntoAyuda"></span>Ayuda</li>
+            <ul class="mapLegend">
+                <li><span class="dot dotLodging"></span>Alojamiento</li>
+                <li><span class="dot dotPets"></span>Mascotas</li>
+                <li><span class="dot dotWarnings"></span>Avisos</li>
+                <li><span class="dot dotFood"></span>Alimentación</li>
+                <li><span class="dot dotServices"></span>Servicios</li>
+                <li><span class="dot dotCommunity"></span>Comunidad</li>
+                <li><span class="dot dotAccessibility"></span>Accesibilidad</li>
+                <li><span class="dot dotHelp"></span>Ayuda</li>
             </ul>
         </div>
 
     </section>
 
-    <!-- ===== 7. INCIDENCIA (Daniel) ===== -->
-    <section class="incidencia">
-        <img src="https://res.cloudinary.com/duzljw2pp/image/upload/v1791185892/llamado_nc7s8u.jpg" alt="Peregrino en las montañas" class="incidenciaFondo">
+    <section class="incident">
+        <img src="https://res.cloudinary.com/duzljw2pp/image/upload/v1791185892/llamado_nc7s8u.jpg" alt="Peregrino en las montañas" class="incidentBackground">
 
-        <div class="incidenciaTexto">
+        <div class="incidentText">
             <h2>¿Has encontrado un problema en el camino?</h2>
-            <p>Informa de incidencias como fuentes sin agua, caminos cortados,<br> señalización dañada, problemas de accesibilidad, animales perdidos, etc.</p>
-        </div>
+            <p>Informa de incidencias como fuentes sin agua, caminos cortados, señalización dañada, problemas de accesibilidad, animales perdidos, etc.</p>
 
-        <a href="#" class="btnIncidencia">
-            <i class="ri-volume-up-line"></i>
-            Informar de una incidencia
-        </a>
+            <a href="#" class="btnIncident">
+                <i class="ri-volume-up-line"></i>
+                Informar de una incidencia
+            </a>
+        </div>
     </section>
 
-    <!-- ===== 8. FOOTER (Melissa) ===== -->
 <footer class="siteFooter">
     <div class="footerContainer">
     
@@ -603,30 +761,30 @@
     <div class="footerCol">
         <h4 class="footerTitle">Navega</h4>
         <ul class="footerLinks">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#mapa">Mapa</a></li>
-            <li><a href="#comunidad">Comunidad</a></li>
-            <li><a href="#ayuda">Ayuda</a></li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#map">Mapa</a></li>
+            <li><a href="#community">Comunidad</a></li>
+            <li><a href="#help">Ayuda</a></li>
         </ul>
     </div>
 
     <div class="footerCol">
         <h4 class="footerTitle">Áreas de impacto</h4>
         <ul class="footerLinks">
-            <li><a href="#necesitoAyuda">Necesito ayuda</a></li>
-            <li><a href="#quieroAyudar">Quiero ayudar</a></li>
-            <li><a href="#quieroOfrecer">Quiero ofrecer</a></li>
-            <li><a href="#noCaminoSolo">No camino solo</a></li>
+            <li><a href="#needHelp">Necesito ayuda</a></li>
+            <li><a href="#wantToHelp">Quiero ayudar</a></li>
+            <li><a href="#wantToOffer">Quiero ofrecer</a></li>
+            <li><a href="#notWalkingAlone">No camino solo</a></li>
         </ul>
     </div>
 
     <div class="footerCol">
         <h4 class="footerTitle">Legal</h4>
         <ul class="footerLinks">
-            <li><a href="#privacidad">Privacidad</a></li>
-            <li><a href="#terminos">Términos de uso</a></li>
+            <li><a href="#privacy">Privacidad</a></li>
+            <li><a href="#terms">Términos de uso</a></li>
             <li><a href="#cookies">Política de cookies</a></li>
-            <li><a href="#contactanos">Contáctanos</a></li>
+            <li><a href="#contact">Contáctanos</a></li>
         </ul>
     </div>
 </div>

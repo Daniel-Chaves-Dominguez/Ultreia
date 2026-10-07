@@ -1,4 +1,3 @@
-/* ===== 1. NAV (Alba) ===== */
 * {
     margin: 0;
     padding: 0;
@@ -66,13 +65,13 @@ html {
     color: #0A5383;
 }
 
-.navBotones {
+.navButtons {
     display: flex;
     gap: 12px;
 }
 
-.btnContacto,
-.btnInicio {
+.btnContact,
+.btnHome {
     padding: 8px 24px;
     border-radius: 8px;
     text-decoration: none;
@@ -81,34 +80,33 @@ html {
     transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
 }
 
-.btnContacto:hover,
-.btnInicio:hover {
+.btnContact:hover,
+.btnHome:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.btnContacto:active,
-.btnInicio:active {
+.btnContact:active,
+.btnHome:active {
     transform: scale(0.92);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.btnContacto {
+.btnContact {
     background-color: white;
     color: #FFAA00;
 }
 
-.btnInicio {
+.btnHome {
     background-color: #FFAA00;
     color: white;
 }
 
-.btnInicio:hover {
+.btnHome:hover {
     background-color: #EFB026;
 }
 
 
-/* ===== 2. HERO (Alba) ===== */
 .hero {
     position: relative;
     height: 550px;
@@ -117,17 +115,17 @@ html {
     border-bottom: 5px solid #FFAA00;
 }
 
-.heroImagen {
+.heroImage {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
+    object-position: center 20%;
 }
 
-.heroContenido {
+.heroContent {
     position: relative;
     z-index: 1;
     height: 100%;
@@ -139,16 +137,16 @@ html {
     gap: 30px;
 }
 
-.heroTitulo {
+.heroTitle {
     font-size: 72px;
     font-weight: 800;
     line-height: 1.05;
     color: #0A5383;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-    animation: heroEntrarIzquierda 1s ease-out both;
+    animation: heroSlideIn 1s ease-out both;
 }
 
-.heroDestacado {
+.heroHighlight {
     display: inline-block;
     background-color: #0A5383;
     color: white;
@@ -156,24 +154,23 @@ html {
     border-radius: 10px;
     margin-top: 6px;
     text-shadow: none;
-    animation: heroRevelar 1s ease-out 0.8s both;
+    animation: heroReveal 1s ease-out 0.8s both;
 }
 
-.heroBotones {
+.heroButtons {
     display: flex;
     gap: 16px;
-    animation: heroRebote 0.8s ease-out 1.6s both;
+    animation: heroBounce 0.8s ease-out 1.6s both;
 }
 
-.heroBotones .btnContacto,
-.heroBotones .btnInicio {
+.heroButtons .btnContact,
+.heroButtons .btnHome {
     font-size: 22px;
     padding: 12px 36px;
     border-radius: 10px;
 }
 
-/* 1. El título entra desde la izquierda */
-@keyframes heroEntrarIzquierda {
+@keyframes heroSlideIn {
     from {
         opacity: 0;
         transform: translateX(-80px);
@@ -184,8 +181,7 @@ html {
     }
 }
 
-/* 2. El recuadro "entre todos" se dibuja de izquierda a derecha */
-@keyframes heroRevelar {
+@keyframes heroReveal {
     from {
         clip-path: inset(0 100% 0 0);
     }
@@ -194,8 +190,7 @@ html {
     }
 }
 
-/* 3. Los botones aparecen con rebote */
-@keyframes heroRebote {
+@keyframes heroBounce {
     0% {
         opacity: 0;
         transform: scale(0.5);
@@ -211,8 +206,7 @@ html {
 }
 
 
-/* ===== 3. SALUDO DEL PEREGRINO (Daniel) ===== */
-.saludo {
+.greeting {
     background-color: #0A5383;
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
@@ -224,7 +218,7 @@ html {
     overflow: hidden;
 }
 
-.saludoTexto {
+.greetingText {
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -233,12 +227,12 @@ html {
     color: white;
 }
 
-.saludoTexto p {
+.greetingText p {
     white-space: nowrap;
     margin: 4px 0;
 }
 
-.saludoTexto h2 {
+.greetingText h2 {
     color: #FFAA00;
     font-size: 16px;
     font-weight: 800;
@@ -247,20 +241,20 @@ html {
     margin-bottom: 8px;
 }
 
-.saludoFrase {
+.greetingPhrase {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
-.saludoPequeno {
+.greetingSmall {
     font-size: 12px;
     font-style: italic;
     color: #f4b22d;
 }
 
-.cartelAmarillo,
-.cartelBlanco {
+.yellowSign,
+.whiteSign {
     width: 160px;
     padding: 14px 18px;
     border-radius: 12px;
@@ -275,41 +269,41 @@ html {
     text-align: center;       
 }
 
-.cartelAmarillo {
+.yellowSign {
     background-color: #FFAA00;
     transform: rotate(-10deg);
 }
 
-.cartelBlanco {
+.whiteSign {
     background-color: white;
     transform: rotate(10deg);
 }
 
-.cartelAmarillo h3,
-.cartelBlanco h3 {
+.yellowSign h3,
+.whiteSign h3 {
     font-size: 24px;
     font-weight: 800;
     margin: 0;
     line-height: 1.1;
 }
 
-.cartelAmarillo p,
-.cartelBlanco p {
+.yellowSign p,
+.whiteSign p {
     font-size: 12px;
     font-weight: 700;
     margin: 4px 0 0 0;
 }
 
-.cartelAmarillo p {
+.yellowSign p {
     padding-left: 0px;
 }
 
-.cartelBlanco p {
+.whiteSign p {
     text-align: right;
 }
 
 @media (max-width: 768px) {
-    .saludo {
+    .greeting {
         flex-direction: column;
         gap: 30px;
         padding: 30px 20px;
@@ -317,10 +311,9 @@ html {
 }
 
 
-/* ===== 4. QUÉ NECESITAS (Daniel) ===== */
 
 
-.necesitas {
+.needs {
     background-color: white;
     font-family: 'Plus Jakarta Sans', sans-serif;
     padding: 1.6rem 1.5rem 2rem 2rem;
@@ -329,20 +322,20 @@ html {
     text-align: left;
 }
 
-.necesitas h2 {
+.needs h2 {
     color: #0A5383;
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 0.2rem;
 }
 
-.necesitasSubtitulo {
+.needsSubtitle {
     color: #64748B;
     font-size: 1rem;
     margin-bottom: 2rem;
 }
 
-.necesitasTarjetas {
+.needsCards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
@@ -350,108 +343,210 @@ html {
     margin: 0 auto;
 }
 
-.tarjeta {
-    display: flex;
-    gap: 16px;
-    padding: 1.5rem;
-    background-color: white;
+.needCard {
+    height: 360px;
+    perspective: 1200px;
+    cursor: pointer;
+}
+
+.needCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.needCard:hover .needCardInner,
+.needCard:focus-within .needCardInner {
+    transform: rotateY(-180deg);
+}
+
+.needCardFront,
+.needCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-radius: 24px;
+    background-color: white;
     box-shadow: 0 10px 30px rgba(10, 83, 131, 0.08);
-    text-decoration: none;
-    transition: transform 0.3s, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.needCardFront {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.8rem;
 }
 
-.tarjeta:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-.tarjetaIcono {
-    width: 56px;
-    height: 56px;
-    min-width: 56px;
+.needIcon {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 30px;
-    flex-shrink: 0;
-    align-self: flex-start;
-    margin-top: 2px;
+    font-size: 40px;
+    margin-bottom: 1.2rem;
 }
 
-.iconoRojo {
+.iconRed {
     background-color: #EF3F42;
 }
 
-.iconoVerde {
+.iconGreen {
     background-color: #5E9459;
 }
 
-.iconoNaranja {
+.iconOrange {
     background-color: #FFAA00;
 }
 
-.iconoAzul {
+.iconBlue {
     background-color: #0A5383;
 }
 
-
-.tarjeta:hover .tarjetaIcono {
-    animation: saltito 0.6s;
-}
-
-@keyframes saltito {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-    30% {
-        transform: scale(1.2) rotate(-10deg);
-    }
-    60% {
-        transform: scale(0.95) rotate(8deg);
-    }
-    100% {
-        transform: scale(1) rotate(0deg);
-    }
-}
-
-.tarjetaTexto h3 {
+.needCardFront h3 {
     color: #0A5383;
     font-size: 1.25rem;
     font-weight: 800;
-    margin-bottom: 4px;
+    margin-bottom: 0.5rem;
 }
 
-.tarjetaTexto p {
+.needCardFront p {
     color: #64748B;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     line-height: 1.4;
-    margin-bottom: 6px;
+    height: 2.8em;
 }
 
-.tarjetaFlecha {
-    display: inline-block;
+.needArrow {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
     color: #0A5383;
-    font-size: 24px;
-    transition: transform 0.3s ease;
+    font-size: 28px;
 }
 
-
-.tarjeta:hover .tarjetaFlecha {
-    transform: translateX(6px);
+.needCardBack {
+    transform: rotateY(180deg);
+    border-top: 10px solid #FFAA00;
+    padding: 1rem 1.2rem;
+    cursor: default;
 }
 
-@media (max-width: 768px) {
-    .necesitasTarjetas {
+.needFormHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.needIconSmall {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.needFormHeader h3 {
+    color: #0A5383;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.needFormHeader p {
+    color: #64748B;
+    font-size: 0.72rem;
+    line-height: 1.3;
+}
+
+.needForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.formGroup label {
+    color: #0A5383;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    height: 30px;
+    padding: 0 8px;
+    background-color: #B0D4E8;
+    border: 2px solid #B0D4E8;
+    border-radius: 6px;
+    color: #0A5383;
+    font-size: 0.75rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.formGroup textarea {
+    height: 50px;
+    padding: 6px 8px;
+    resize: none;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: #0A5383;
+}
+
+.btnSend {
+    margin-top: 4px;
+    height: 34px;
+    background-color: #FFAA00;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btnSend:hover {
+    background-color: #EFB026;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+    .needsCards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 480px) {
-    .necesitasTarjetas {
+@media (max-width: 640px) {
+    .needsCards {
         grid-template-columns: 1fr;
     }
 }
@@ -860,8 +955,7 @@ html {
 }
 
 
-/* ===== 6. TABLÓN + MAPA (Alba) ===== */
-.comunidad {
+.community {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -874,29 +968,29 @@ html {
 }
 
 
-.tablonCabecera,
-.mapaCabecera {
+.boardHeader,
+.mapHeader {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 14px;
 }
 
-.tablon h2,
-.mapa h2 {
+.board h2,
+.map h2 {
     color: #0A5383;
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 4px;
 }
 
-.tablonSubtitulo,
-.mapaSubtitulo {
+.boardSubtitle,
+.mapSubtitle {
     color: #64748B;
     font-size: 1rem;
 }
 
-.tablonVerTodo {
+.boardSeeAll {
     color: #0A5383;
     font-size: 13px;
     font-weight: 700;
@@ -904,16 +998,15 @@ html {
     transition: color 0.3s;
 }
 
-.tablonVerTodo:hover {
+.boardSeeAll:hover {
     color: #FFAA00;
 }
 
-/* --- Publicaciones --- */
-.tablonLista {
+.boardList {
     list-style: none;
 }
 
-.publicacion {
+.post {
     display: grid;
     grid-template-columns: 56px 120px 1fr auto;
     align-items: center;
@@ -925,12 +1018,12 @@ html {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.publicacion:hover {
+.post:hover {
     background-color: #F4F7FB;
     transform: translateX(6px);
 }
 
-.publicacionFoto {
+.postPhoto {
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -940,11 +1033,11 @@ html {
     transition: transform 0.3s;
 }
 
-.publicacion:hover .publicacionFoto {
+.post:hover .postPhoto {
     transform: scale(1.1);
 }
 
-.etiqueta {
+.tag {
     justify-self: start;
     padding: 4px 10px;
     border-radius: 6px;
@@ -955,43 +1048,42 @@ html {
     line-height: 1.2;
 }
 
-.etiquetaAviso {
+.tagWarning {
     background-color: #EF3F42;
 }
 
-.etiquetaAyuda {
+.tagHelp {
     background-color: #0A5383;
 }
 
-.etiquetaOfrecer {
+.tagOffer {
     background-color: #FFAA00;
 }
 
-.etiquetaIniciativa {
+.tagInitiative {
     background-color: #5E9459;
 }
 
-.publicacionTexto h3 {
+.postText h3 {
     color: #0A5383;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 4px;
 }
 
-.publicacionTexto p {
+.postText p {
     color: #64748B;
     font-size: 13px;
 }
 
-.publicacionTiempo {
+.postTime {
     color: #0A5383;
     font-size: 12px;
     font-weight: 700;
     white-space: nowrap;
 }
 
-/* --- Mapa --- */
-.btnFiltros {
+.btnFilters {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -1005,18 +1097,18 @@ html {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btnFiltros:hover {
+.btnFilters:hover {
     background-color: #0A5383;
     color: white;
 }
 
-.mapaImagenCaja {
+.mapImageBox {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-.mapaImagen {
+.mapImage {
     display: block;
     width: 100%;
     height: 320px;
@@ -1024,11 +1116,11 @@ html {
     transition: transform 0.5s;
 }
 
-.mapaImagenCaja:hover .mapaImagen {
+.mapImageBox:hover .mapImage {
     transform: scale(1.05);
 }
 
-.mapaLeyenda {
+.mapLegend {
     list-style: none;
     padding: 0;
     margin: 1rem 0 0 0;
@@ -1038,7 +1130,7 @@ html {
     gap: 12px 24px; 
 }
 
-.mapaLeyenda li {
+.mapLegend li {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1048,66 +1140,61 @@ html {
     white-space: nowrap;
 }
 
-.punto {
+.dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
 }
 
-.puntoAlojamiento { background-color: #2D3748; }
-.puntoMascotas { background-color: #5E9459; }
-.puntoAvisos { background-color: #EF3F42; }
-.puntoAlimentacion { background-color: #FFAA00; }
-.puntoServicios { background-color: #0A5383; }
-.puntoComunidad { background-color: #718096; }
-.puntoAccesibilidad { background-color: #3182CE; }
-.puntoAyuda { background-color: #C53030; }
+.dotLodging { background-color: #2D3748; }
+.dotPets { background-color: #5E9459; }
+.dotWarnings { background-color: #EF3F42; }
+.dotFood { background-color: #FFAA00; }
+.dotServices { background-color: #0A5383; }
+.dotCommunity { background-color: #718096; }
+.dotAccessibility { background-color: #3182CE; }
+.dotHelp { background-color: #C53030; }
 
-/* --- Móvil --- */
 @media (max-width: 900px) {
-    .comunidad {
+    .community {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 600px) {
-    .publicacion {
+    .post {
         grid-template-columns: 48px 1fr;
     }
 
-    .publicacionFoto {
+    .postPhoto {
         grid-row: span 3;
         width: 48px;
         height: 48px;
     }
 
-    .mapaLeyenda {
+    .mapLegend {
         grid-template-columns: repeat(2, auto);
         justify-content: start;
     }
 }
 
 
-/* ===== 7. INCIDENCIA (Daniel) ===== */
-.incidencia {
+.incident {
     position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
     overflow: hidden;
     background-color: white;
     border-radius: 24px;
     aspect-ratio: 2278 / 464;
-    padding: 30px 40px;
+    padding: 24px 40px;
     max-width: 1400px;
     margin: 0 auto 2rem auto;
-    text-align: left;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
 }
 
-
-.incidenciaFondo {
+.incidentBackground {
     position: absolute;
     top: 0;
     left: 0;
@@ -1118,64 +1205,59 @@ html {
     opacity: 0.5;
 }
 
-.incidenciaTexto {
+.incidentText {
     position: relative;
-    max-width: 48%;
+    max-width: 640px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: -30px;
+    align-items: center;
+    text-align: center;
 }
 
-.incidenciaTexto h2 {
+.incidentText h2 {
     color: #0A5383;
     font-size: 1.75rem;
     font-weight: 800;
-    margin-bottom: 24px;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.incidenciaTexto p {
-    color: #64748B;
+.incidentText p {
+    color: #475569;
     font-size: 1rem;
     line-height: 1.6;
-    margin-right: 20px;
+    margin-bottom: 22px;
 }
 
-.btnIncidencia {
-    position: absolute;
-    left: 55%;
-    top: 38%;
-    height: 38px;
-    display: flex;
+.btnIncident {
+    display: inline-flex;
     align-items: center;
     gap: 12px;
-    padding: 0 20px;
+    padding: 12px 28px;
     background-color: #0A5383;
     color: white;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
     text-decoration: none;
     border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(10, 83, 131, 0.3);
     transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
-.btnIncidencia i {
+.btnIncident i {
     font-size: 22px;
 }
 
-.btnIncidencia:hover {
+.btnIncident:hover {
     background-color: #FFAA00;
     transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
 }
 
-
-.btnIncidencia:hover i {
-    animation: sonar 0.5s infinite;
+.btnIncident:hover i {
+    animation: ring 0.5s infinite;
 }
 
-@keyframes sonar {
+@keyframes ring {
     0% {
         transform: rotate(0deg);
     }
@@ -1191,23 +1273,18 @@ html {
 }
 
 @media (max-width: 768px) {
-    .incidencia {
+    .incident {
         aspect-ratio: auto;
         margin: 0 15px 30px 15px;
-        padding: 25px 20px;
+        padding: 30px 20px;
     }
 
-    .btnIncidencia {
-        position: relative;
-        left: 0;
-        top: 0;
-        display: inline-flex;
-        margin-top: 20px;
+    .incidentText h2 {
+        font-size: 1.4rem;
     }
 }
 
 
-/* ===== 8. FOOTER (Melissa) ===== */
 .siteFooter {
     background-color: #0A5383; 
     color: #ffffff;
