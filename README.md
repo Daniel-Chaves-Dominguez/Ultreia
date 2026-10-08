@@ -14,7 +14,7 @@ Plataforma web comunitaria que conecta a peregrinos del Camino de Santiago con v
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/Daniel-Chaves-Dominguez/Ultreia/blob/main/styles.css)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/3qCr2xarjgeDtZd6AghsSY/Ultreia?node-id=0-1&p=f&t=Fk0yzKOQ2sBhyMlp-0)
 [![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com/b/A9NZHmCw/ultreia)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ultreia-eight.vercel.app)
 
 </div>
 
@@ -45,7 +45,7 @@ Ultreia reúne en un único sitio a **quien necesita ayuda** y a **quien puede o
 
 La web está publicada en **Vercel** y se puede visitar aquí:
 
-👉 **[https://ENLACE-DE-VERCEL.vercel.app](https://ENLACE-DE-VERCEL.vercel.app)**
+👉**[https://ultreia-eight.vercel.app](https://ultreia-eight.vercel.app)**
 
 > El despliegue está conectado al repositorio de GitHub: cada cambio que se sube a la rama `main` se publica automáticamente.
 
