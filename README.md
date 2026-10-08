@@ -75,14 +75,12 @@ La web está publicada en **Vercel** y se puede visitar aquí:
 
 ### Página de contacto y ayuda
 
-![Página de contacto](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451382/Captura_de_pantalla_2026-10-08_112254_izodnx.png)
+![Página de contacto](https://res.cloudinary.com/duzljw2pp/image/upload/v1791455264/Captura_de_pantalla_2026-10-08_122722_auim1c.png)
 
-### Versión móvil
+### Página de información legal
 
-<p align="center">
-  <img src="ruta/captura-movil-1.png" alt="Versión móvil 1" width="250">
-  <img src="ruta/captura-movil-2.png" alt="Versión móvil 2" width="250">
-</p>
+![Parte de información legal](https://res.cloudinary.com/duzljw2pp/image/upload/v1791455344/Captura_de_pantalla_2026-10-08_122856_rydmew.png)
+
 
 ---
 

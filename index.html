@@ -51,7 +51,7 @@
 
     <section class="greeting">
         <div class="yellowSign">
-            <h3>¡Ultreia!</h3>
+            <p class="signTitle">¡Ultreia!</p>
             <p>¡Más allá!</p>
         </div>
 
@@ -63,7 +63,7 @@
         </div>
 
         <div class="whiteSign">
-            <h3>¡Et suseia!</h3>
+            <p class="signTitle">¡Et suseia!</p>
             <p>¡Y más arriba!</p>
         </div>
     </section>
@@ -95,30 +95,30 @@
                             </div>
                         </div>
 
-                        <form class="needForm">
+                        <form class="needForm" action="#formSent" autocomplete="off">
                             <div class="formRow">
                                 <div class="formGroup">
                                     <label for="helpName">Nombre</label>
-                                    <input type="text" id="helpName">
+                                    <input type="text" id="helpName" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                                 <div class="formGroup">
                                     <label for="helpPhone">Teléfono</label>
-                                    <input type="tel" id="helpPhone">
+                                    <input type="tel" id="helpPhone" pattern="[0-9]{9}" title="Escribe 9 números, sin letras ni espacios" required>
                                 </div>
                             </div>
                             <div class="formRow">
                                 <div class="formGroup">
                                     <label for="helpPlace">¿Dónde estás?</label>
-                                    <input type="text" id="helpPlace">
+                                    <input type="text" id="helpPlace" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                                 <div class="formGroup">
                                     <label for="helpType">Tipo de incidencia</label>
-                                    <input type="text" id="helpType">
+                                    <input type="text" id="helpType" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                             </div>
                             <div class="formGroup">
                                 <label for="helpMessage">Mensaje</label>
-                                <textarea id="helpMessage"></textarea>
+                                <input type="text" id="helpMessage" class="messageInput" pattern=".*[A-Za-zÁÉÍÓÚáéíóúÑñÜü].*" title="El mensaje tiene que llevar letras, no solo números" required>
                             </div>
                             <button type="submit" class="btnSend">Enviar solicitud</button>
                         </form>
@@ -148,30 +148,30 @@
                             </div>
                         </div>
 
-                        <form class="needForm">
+                        <form class="needForm" action="#formSent" autocomplete="off">
                             <div class="formRow">
                                 <div class="formGroup">
                                     <label for="volunteerName">Nombre</label>
-                                    <input type="text" id="volunteerName">
+                                    <input type="text" id="volunteerName" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                                 <div class="formGroup">
                                     <label for="volunteerPhone">Teléfono</label>
-                                    <input type="tel" id="volunteerPhone">
+                                    <input type="tel" id="volunteerPhone" pattern="[0-9]{9}" title="Escribe 9 números, sin letras ni espacios" required>
                                 </div>
                             </div>
                             <div class="formRow">
                                 <div class="formGroup">
                                     <label for="volunteerPlace">¿Dónde estás?</label>
-                                    <input type="text" id="volunteerPlace">
+                                    <input type="text" id="volunteerPlace" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                                 <div class="formGroup">
                                     <label for="volunteerType">¿Cómo quieres ayudar?</label>
-                                    <input type="text" id="volunteerType">
+                                    <input type="text" id="volunteerType" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                             </div>
                             <div class="formGroup">
                                 <label for="volunteerMessage">Mensaje</label>
-                                <textarea id="volunteerMessage"></textarea>
+                                <input type="text" id="volunteerMessage" class="messageInput" pattern=".*[A-Za-zÁÉÍÓÚáéíóúÑñÜü].*" title="El mensaje tiene que llevar letras, no solo números" required>
                             </div>
                             <button type="submit" class="btnSend">Quiero colaborar</button>
                         </form>
@@ -201,30 +201,30 @@
                             </div>
                         </div>
 
-                        <form class="needForm">
+                        <form class="needForm" action="#formSent" autocomplete="off">
                             <div class="formRow">
                                 <div class="formGroup">
                                     <label for="offerName">Nombre</label>
-                                    <input type="text" id="offerName">
+                                    <input type="text" id="offerName" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                                 <div class="formGroup">
                                     <label for="offerPhone">Teléfono</label>
-                                    <input type="tel" id="offerPhone">
+                                    <input type="tel" id="offerPhone" pattern="[0-9]{9}" title="Escribe 9 números, sin letras ni espacios" required>
                                 </div>
                             </div>
                             <div class="formRow">
                                 <div class="formGroup">
                                     <label for="offerPlace">¿Dónde está?</label>
-                                    <input type="text" id="offerPlace">
+                                    <input type="text" id="offerPlace" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                                 <div class="formGroup">
                                     <label for="offerType">¿Qué ofreces?</label>
-                                    <input type="text" id="offerType">
+                                    <input type="text" id="offerType" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                             </div>
                             <div class="formGroup">
                                 <label for="offerMessage">Mensaje</label>
-                                <textarea id="offerMessage"></textarea>
+                                <input type="text" id="offerMessage" class="messageInput" pattern=".*[A-Za-zÁÉÍÓÚáéíóúÑñÜü].*" title="El mensaje tiene que llevar letras, no solo números" required>
                             </div>
                             <button type="submit" class="btnSend">Publicar oferta</button>
                         </form>
@@ -254,30 +254,30 @@
                             </div>
                         </div>
 
-                        <form class="needForm">
+                        <form class="needForm" action="#formSent" autocomplete="off">
                             <div class="formRow">
                                 <div class="formGroup">
                                     <label for="companyName">Nombre</label>
-                                    <input type="text" id="companyName">
+                                    <input type="text" id="companyName" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                                 <div class="formGroup">
                                     <label for="companyPhone">Teléfono</label>
-                                    <input type="tel" id="companyPhone">
+                                    <input type="tel" id="companyPhone" pattern="[0-9]{9}" title="Escribe 9 números, sin letras ni espacios" required>
                                 </div>
                             </div>
                             <div class="formRow">
                                 <div class="formGroup">
                                     <label for="companyRoute">¿Qué camino haces?</label>
-                                    <input type="text" id="companyRoute">
+                                    <input type="text" id="companyRoute" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü .,]+" title="Escribe solo letras, sin números" required>
                                 </div>
                                 <div class="formGroup">
                                     <label for="companyDate">¿Cuándo empiezas?</label>
-                                    <input type="date" id="companyDate">
+                                    <input type="date" id="companyDate" required>
                                 </div>
                             </div>
                             <div class="formGroup">
                                 <label for="companyMessage">Mensaje</label>
-                                <textarea id="companyMessage"></textarea>
+                                <input type="text" id="companyMessage" class="messageInput" pattern=".*[A-Za-zÁÉÍÓÚáéíóúÑñÜü].*" title="El mensaje tiene que llevar letras, no solo números" required>
                             </div>
                             <button type="submit" class="btnSend">Buscar compañeros</button>
                         </form>
@@ -309,7 +309,7 @@
                             <h3 class="cardTitle">Camino para todos</h3>
                             <p class="cardDesc">Tramos, recursos y apoyo para personas con movilidad reducida.</p>
                             <div class="cardAction">
-                                <span class="btnText">Ver más</span>
+                                <span>Ver más</span>
                                 <div class="btnArrow"><i class="fa-solid fa-chevron-right"></i></div>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
                             <h3 class="cardTitle">Camino con huellas</h3>
                             <p class="cardDesc">Espacios, servicios y recursos para peregrinos con mascotas.</p>
                             <div class="cardAction">
-                                <span class="btnText">Ver más</span>
+                                <span>Ver más</span>
                                 <div class="btnArrow"><i class="fa-solid fa-chevron-right"></i></div>
                             </div>
                         </div>
@@ -395,7 +395,7 @@
                             <h3 class="cardTitle">Sabores del camino</h3>
                             <p class="cardDesc">Apoya a productores, restaurantes y negocios locales.</p>
                             <div class="cardAction">
-                                <span class="btnText">Ver más</span>
+                                <span>Ver más</span>
                                 <div class="btnArrow"><i class="fa-solid fa-chevron-right"></i></div>
                             </div>
                         </div>
@@ -439,7 +439,7 @@
                             <h3 class="cardTitle">No caminas solo</h3>
                             <p class="cardDesc">Encuentra compañeros de ruta, iniciativas y ayuda mutua.</p>
                             <div class="cardAction">
-                                <span class="btnText">Ver más</span>
+                                <span>Ver más</span>
                                 <div class="btnArrow"><i class="fa-solid fa-chevron-right"></i></div>
                             </div>
                         </div>
@@ -483,7 +483,7 @@
                             <h3 class="cardTitle">Ayuda en el camino</h3>
                             <p class="cardDesc">Información y apoyo en caso de incidencias o imprevistos.</p>
                             <div class="cardAction">
-                                <span class="btnText">Ver más</span>
+                                <span>Ver más</span>
                                 <div class="btnArrow"><i class="fa-solid fa-chevron-right"></i></div>
                             </div>
                         </div>
@@ -527,7 +527,7 @@
                             <h3 class="cardTitle">Comparte lo que tienes</h3>
                             <p class="cardDesc">Alojamiento, servicios, comida o espacios para peregrinos.</p>
                             <div class="cardAction">
-                                <span class="btnText">Ver más</span>
+                                <span>Ver más</span>
                                 <div class="btnArrow"><i class="fa-solid fa-chevron-right"></i></div>
                             </div>
                         </div>
@@ -571,7 +571,7 @@
                             <h3 class="cardTitle">Informa y ayuda</h3>
                             <p class="cardDesc">Reporta incidencias en el camino para que otros peregrinos lo sepan.</p>
                             <div class="cardAction">
-                                <span class="btnText">Ver más</span>
+                                <span>Ver más</span>
                                 <div class="btnArrow"><i class="fa-solid fa-chevron-right"></i></div>
                             </div>
                         </div>
@@ -615,7 +615,7 @@
                             <h3 class="cardTitle">Cuida tu camino</h3>
                             <p class="cardDesc">Recursos para tu salud física y mental durante la peregrinación.</p>
                             <div class="cardAction">
-                                <span class="btnText">Ver más</span>
+                                <span>Ver más</span>
                                 <div class="btnArrow"><i class="fa-solid fa-chevron-right"></i></div>
                             </div>
                         </div>
@@ -740,12 +740,21 @@
             <h2>¿Has encontrado un problema en el camino?</h2>
             <p>Informa de incidencias como fuentes sin agua, caminos cortados, señalización dañada, problemas de accesibilidad, animales perdidos, etc.</p>
 
-            <a href="#" class="btnIncident">
+            <a href="#needHelp" class="btnIncident">
                 <i class="ri-volume-up-line"></i>
                 Informar de una incidencia
             </a>
         </div>
     </section>
+
+    <div class="sentMessage" id="formSent">
+        <div class="sentBox">
+            <i class="ri-checkbox-circle-fill sentIcon"></i>
+            <h2>¡Enviado con éxito!</h2>
+            <p>Hemos recibido tu mensaje. Te contactaremos lo antes posible.</p>
+            <a href="#help" class="btnSentClose">Cerrar</a>
+        </div>
+    </div>
 
 <footer class="siteFooter">
     <div class="footerContainer">
@@ -753,24 +762,24 @@
     <div class="footerBrand">
         <img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791113078/image_ubfnbw.png" alt="Logo Ultreia" class="footerLogo">
         <div class="footerSocials">
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </div>
 
-    <div class="footerCol">
-        <h4 class="footerTitle">Navega</h4>
+    <div>
+        <h3 class="footerTitle">Navega</h3>
         <ul class="footerLinks">
-            <li><a href="#home">Inicio</a></li>
+            <li><a href="#">Inicio</a></li>
             <li><a href="#map">Mapa</a></li>
             <li><a href="#community">Comunidad</a></li>
             <li><a href="#help">Ayuda</a></li>
         </ul>
     </div>
 
-    <div class="footerCol">
-        <h4 class="footerTitle">Áreas de impacto</h4>
+    <div>
+        <h3 class="footerTitle">Áreas de impacto</h3>
         <ul class="footerLinks">
             <li><a href="#needHelp">Necesito ayuda</a></li>
             <li><a href="#wantToHelp">Quiero ayudar</a></li>
@@ -779,19 +788,19 @@
         </ul>
     </div>
 
-    <div class="footerCol">
-        <h4 class="footerTitle">Legal</h4>
+    <div>
+        <h3 class="footerTitle">Legal</h3>
         <ul class="footerLinks">
-            <li><a href="#privacy">Privacidad</a></li>
-            <li><a href="#terms">Términos de uso</a></li>
-            <li><a href="#cookies">Política de cookies</a></li>
+            <li><a href="legal.html#privacy">Privacidad</a></li>
+            <li><a href="legal.html#terms">Términos de uso</a></li>
+            <li><a href="legal.html#cookies">Política de cookies</a></li>
             <li><a href="contact.html">Contáctanos</a></li>
         </ul>
     </div>
 </div>
 
     <div class="footerBottom">
-        <div class="footerBottomContainer container">
+        <div class="footerBottomContainer">
             <p class="footerCopy">
             <a href="https://github.com/Daniel-Chaves-Dominguez/Ultreia" target="_blank" rel="noopener noreferrer" class="copyrightLink">© 2026 Ultreia</a>. Todos los derechos reservados.
             </p>

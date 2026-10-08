@@ -106,6 +106,64 @@ html {
     background-color: #EFB026;
 }
 
+@media (max-width: 900px) {
+    .nav {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .navLogo {
+        width: 70px;
+        height: 70px;
+        margin-left: 0;
+    }
+
+    .navMenu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navMenu a {
+        font-size: 16px;
+        padding: 6px 14px;
+    }
+
+    .navButtons .btnContact,
+    .navButtons .btnHome {
+        font-size: 15px;
+        padding: 6px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navLogo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navMenu {
+        gap: 2px;
+    }
+
+    .navMenu a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .navButtons {
+        gap: 8px;
+    }
+
+    .navButtons .btnContact,
+    .navButtons .btnHome {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
 
 .hero {
     position: relative;
@@ -205,6 +263,43 @@ html {
     }
 }
 
+@media (max-width: 768px) {
+    .hero {
+        height: 450px;
+    }
+
+    .heroContent {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .heroTitle {
+        font-size: 48px;
+    }
+
+    .heroButtons .btnContact,
+    .heroButtons .btnHome {
+        font-size: 18px;
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 380px;
+    }
+
+    .heroTitle {
+        font-size: 36px;
+    }
+
+    .heroButtons .btnContact,
+    .heroButtons .btnHome {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
 
 .greeting {
     background-color: #0A5383;
@@ -279,8 +374,8 @@ html {
     transform: rotate(10deg);
 }
 
-.yellowSign h3,
-.whiteSign h3 {
+.yellowSign .signTitle,
+.whiteSign .signTitle {
     font-size: 24px;
     font-weight: 800;
     margin: 0;
@@ -307,6 +402,10 @@ html {
         flex-direction: column;
         gap: 30px;
         padding: 30px 20px;
+    }
+
+    .greetingText p {
+        white-space: normal;
     }
 }
 
@@ -353,7 +452,7 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s ease;
     transform-style: preserve-3d;
 }
 
@@ -496,8 +595,7 @@ html {
     font-weight: 700;
 }
 
-.formGroup input,
-.formGroup textarea {
+.formGroup input {
     width: 100%;
     height: 30px;
     padding: 0 8px;
@@ -510,14 +608,11 @@ html {
     transition: border-color 0.3s;
 }
 
-.formGroup textarea {
+.formGroup .messageInput {
     height: 50px;
-    padding: 6px 8px;
-    resize: none;
 }
 
-.formGroup input:focus,
-.formGroup textarea:focus {
+.formGroup input:focus {
     border-color: #0A5383;
 }
 
@@ -537,6 +632,84 @@ html {
 .btnSend:hover {
     background-color: #EFB026;
     transform: translateY(-2px);
+}
+
+.sentMessage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 83, 131, 0.6);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+.sentMessage:target {
+    display: flex;
+}
+
+.sentBox {
+    max-width: 400px;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    animation: sentPop 0.5s ease-out;
+}
+
+.sentIcon {
+    display: block;
+    color: #5E9459;
+    font-size: 100px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.sentBox h2 {
+    color: #0A5383;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.sentBox p {
+    color: #64748B;
+    font-size: 1rem;
+    margin-bottom: 24px;
+}
+
+.btnSentClose {
+    display: inline-block;
+    padding: 10px 32px;
+    background-color: #FFAA00;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btnSentClose:hover {
+    background-color: #0A5383;
+}
+
+@keyframes sentPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 1200px) {
@@ -594,7 +767,7 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s ease;
     transform-style: preserve-3d;
     border-radius: 24px;
 }
@@ -1345,13 +1518,6 @@ html {
     transform: scale(1.15); 
 }
 
-.footerTagline, 
-.footerLogoText {
-    font-family: 'Caveat', cursive;
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
 .footerTitle {
     color: #FFAA00; 
     font-size: 1rem;
@@ -1434,11 +1600,6 @@ html {
     .footerContainer {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-    }
-
-    .footerBottomContainer {
-        flex-direction: column;
-        text-align: center;
     }
 }
 
@@ -1630,8 +1791,7 @@ html {
     font-size: 0.8rem;
 }
 
-.chatStatus::before {
-    content: "";
+.statusDot {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -1665,13 +1825,6 @@ html {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.messageUser {
-    align-self: flex-end;
-    background-color: #0A5383;
-    color: white;
-    border-bottom-right-radius: 4px;
-}
-
 .chatQuestion {
     display: flex;
     flex-direction: column;
@@ -1691,10 +1844,6 @@ html {
     list-style: none;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-}
-
-.chatQuestion summary::-webkit-details-marker {
-    display: none;
 }
 
 .chatQuestion summary:hover,
@@ -1794,5 +1943,65 @@ html {
 
     .contactHero h1 {
         font-size: 1.8rem;
+    }
+}
+
+.legalHero {
+    background-color: #0A5383;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 5px solid #FFAA00;
+}
+
+.legalHero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.legalHero p {
+    color: #A7CEE8;
+    font-size: 1.1rem;
+}
+
+.legal {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 1.5rem;
+}
+
+.legalBlock {
+    padding: 30px;
+    background-color: white;
+    border-radius: 24px;
+    border-left: 6px solid #FFAA00;
+    box-shadow: 0 10px 30px rgba(10, 83, 131, 0.1);
+}
+
+.legalBlock h2 {
+    color: #0A5383;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.legalBlock p {
+    color: #64748B;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 640px) {
+    .legalHero h1 {
+        font-size: 1.8rem;
+    }
+
+    .legalBlock {
+        padding: 20px;
     }
 }
