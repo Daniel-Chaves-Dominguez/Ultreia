@@ -53,25 +53,29 @@ La web está publicada en **Vercel** y se puede visitar aquí:
 
 ## 📸 Así se ve la web desplegada
 
-### Página de inicio
+### Página de inicio con el hero y el saludo del peregrino
 
-![Página de inicio de Ultreia](ruta/captura-inicio.png)
+![Página de inicio de Ultreia](https://res.cloudinary.com/duzljw2pp/image/upload/v1791450816/Captura_de_pantalla_2026-10-08_110606_chbfbv.png)
 
-### Hero y saludo del peregrino
+### ¿Qué necesitas?
 
-![Hero de Ultreia](ruta/captura-hero.png)
+![Parte ¿Qué necesitas?](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451008/Captura_de_pantalla_2026-10-08_111639_v8xgz7.png)
 
-### ¿Qué necesitas? y áreas de impacto
+### Nuestras 8 áreas de impacto
 
-![Tarjetas de áreas de impacto](ruta/captura-areas.png)
+![Parte de zonas de impacto](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451129/Captura_de_pantalla_2026-10-08_111830_c80dza.png)
 
 ### Tablón comunitario y mapa
 
-![Tablón comunitario y mapa](ruta/captura-tablon-mapa.png)
+![Tablón comunitario y mapa](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451215/Captura_de_pantalla_2026-10-08_112007_rlyuec.png)
+
+### Incidencias y footer
+
+![Parte de incidencias y footer](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451319/Captura_de_pantalla_2026-10-08_112152_q2f1kz.png)
 
 ### Página de contacto y ayuda
 
-![Página de contacto](ruta/captura-contacto.png)
+![Página de contacto](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451382/Captura_de_pantalla_2026-10-08_112254_izodnx.png)
 
 ### Versión móvil
 
@@ -288,7 +292,7 @@ Seguimos una metodología **ágil inspirada en Scrum**:
 | | Nombre | LinkedIn |
 |---|---|---|
 | 👩‍💻 | **Alba Ruiz de la Vega** | [LinkedIn](https://www.linkedin.com/in/alba-ruiz-de-la-vega-765b21384/) |
-| 👨‍💻 | **Daniel Chaves Domínguez** | [LinkedIn](URL_LINKEDIN_DANIEL) |
+| 👨‍💻 | **Daniel Chaves Domínguez** | [LinkedIn](https://github.com/Daniel-Chaves-Dominguez) |
 | 👩‍💻 | **Melissa Guerrero** | [LinkedIn](https://www.linkedin.com/in/melissafguerreroc/) |
 
 ---
