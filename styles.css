@@ -955,6 +955,7 @@ html {
     gap: 0.4rem;
 }
 
+
 .themeBlue .badgeIcon,
 .themeBlue .badgeIconSmall {
     background-color: #0A5383;
@@ -1994,6 +1995,13 @@ html {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 10px;
+}
+
+.btnBackHome--right {
+    display: flex;
+    margin-left: auto;
+    width: fit-content; 
+    margin-top: 2rem;   
 }
 
 @media (max-width: 640px) {
