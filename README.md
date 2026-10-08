@@ -10,11 +10,11 @@ Plataforma web comunitaria que conecta a peregrinos del Camino de Santiago con v
 
 [🌐 Ver la web desplegada](#-web-desplegada-en-vercel) · [🎨 Diseño en Figma](#-diseño-en-figma) · [👥 Equipo](#-equipo)
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/Daniel-Chaves-Dominguez/Ultreia/blob/main/index.html)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/Daniel-Chaves-Dominguez/Ultreia/blob/main/styles.css)
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/3qCr2xarjgeDtZd6AghsSY/Ultreia?node-id=0-1&p=f&t=Fk0yzKOQ2sBhyMlp-0)
+[![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com/b/A9NZHmCw/ultreia)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
 </div>
 
@@ -63,7 +63,7 @@ La web está publicada en **Vercel** y se puede visitar aquí:
 
 ### Nuestras 8 áreas de impacto
 
-![Parte de zonas de impacto](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451129/Captura_de_pantalla_2026-10-08_111830_c80dza.png)
+![Parte de zonas de impacto](https://res.cloudinary.com/dfhwxnhsl/image/upload/v1791482295/cards_jhxde2.png)
 
 ### Tablón comunitario y mapa
 
@@ -79,7 +79,7 @@ La web está publicada en **Vercel** y se puede visitar aquí:
 
 ### Página de información legal
 
-![Parte de información legal](https://res.cloudinary.com/duzljw2pp/image/upload/v1791455344/Captura_de_pantalla_2026-10-08_122856_rydmew.png)
+![Parte de información legal](https://res.cloudinary.com/dfhwxnhsl/image/upload/v1791482619/legal2_dk3w86.png)
 
 
 ---
