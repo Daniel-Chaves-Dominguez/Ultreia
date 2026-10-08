@@ -877,7 +877,7 @@ html {
 .cardBack {
     transform: rotateY(180deg);
     padding: 1.8rem;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .cardBackHeader {
@@ -941,20 +941,6 @@ html {
     font-size: 0.78rem;
     line-height: 1.3;
 }
-
-.cardBackFooter {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.btnBack {
-    font-weight: 700;
-    font-size: 0.85rem;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
 
 .themeBlue .badgeIcon,
 .themeBlue .badgeIconSmall {
