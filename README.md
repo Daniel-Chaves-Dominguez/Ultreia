@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791113078/image_ubfnbw.png" alt="Logo Ultreia" width="140">
+<img src="https://res.cloudinary.com/daul6tzck/image/upload/v1791113078/image_ubfnbw.png" alt="Ultreia logo" width="140">
 
 # Ultreia
 
-### El Camino lo hacemos entre todos
+### We walk the Camino together
 
-Plataforma web comunitaria que conecta a peregrinos del Camino de Santiago con vecinos, voluntarios y negocios locales para que nadie haga el Camino solo.
+A community web platform that connects pilgrims on the Camino de Santiago with locals, volunteers and local businesses, so that no one walks the Camino alone.
 
-[🌐 Ver la web desplegada](#-web-desplegada-en-vercel) · [🎨 Diseño en Figma](#-diseño-en-figma) · [👥 Equipo](#-equipo)
+[🌐 Live demo](#-live-demo-on-vercel) · [🎨 Figma design](#-figma-design) · [👥 Team](#-team)
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/Daniel-Chaves-Dominguez/Ultreia/blob/main/index.html)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/Daniel-Chaves-Dominguez/Ultreia/blob/main/styles.css)
@@ -20,198 +20,197 @@ Plataforma web comunitaria que conecta a peregrinos del Camino de Santiago con v
 
 ---
 
-## 📌 ¿Qué es Ultreia?
+## 📌 What is Ultreia?
 
-**Ultreia** es una web de apoyo comunitario para el Camino de Santiago. Su nombre viene del saludo medieval de los peregrinos: uno decía *«¡Ultreia!»* (¡más allá!) y el otro respondía *«¡Et suseia!»* (¡y más arriba!).
+**Ultreia** is a community support website for the Camino de Santiago. Its name comes from the medieval pilgrims' greeting: one would say *"Ultreia!"* (further!) and the other would reply *"Et suseia!"* (and higher!).
 
-### ❓ ¿Qué problema soluciona?
+### ❓ What problem does it solve?
 
-Durante el Camino, los peregrinos se encuentran con problemas que no siempre saben a quién comunicar: una fuente sin agua, un tramo cortado, una lesión, no encontrar alojamiento o simplemente no querer caminar solos. Además, la información sobre recursos (alojamientos, servicios, accesibilidad, mascotas...) está muy dispersa.
+Along the Camino, pilgrims face problems they don't always know who to report to: a fountain with no water, a closed path, an injury, not finding accommodation or simply not wanting to walk alone. On top of that, information about resources (accommodation, services, accessibility, pets...) is scattered across many places.
 
-### ✅ Funcionalidad principal
+### ✅ Main features
 
-Ultreia reúne en un único sitio a **quien necesita ayuda** y a **quien puede ofrecerla**:
+Ultreia brings together in one place **those who need help** and **those who can offer it**:
 
-- **Pedir ayuda** o **informar de incidencias** en el Camino.
-- **Ofrecer** alojamiento, comida, servicios o espacios para peregrinos.
-- **Participar** como voluntario en iniciativas.
-- **Encontrar compañeros** de ruta.
-- **Consultar** recursos en el mapa y las publicaciones del tablón comunitario.
-- **Contactar** con teléfonos de emergencia y un chat de preguntas frecuentes.
-
----
-
-## 🌐 Web desplegada en Vercel
-
-La web está publicada en **Vercel** y se puede visitar aquí:
-
-👉**[https://ultreia-eight.vercel.app](https://ultreia-eight.vercel.app)**
-
-> El despliegue está conectado al repositorio de GitHub: cada cambio que se sube a la rama `main` se publica automáticamente.
+- **Ask for help** or **report incidents** on the Camino.
+- **Offer** accommodation, food, services or spaces for pilgrims.
+- **Take part** as a volunteer in local initiatives.
+- **Find walking companions**.
+- **Browse** resources on the map and posts on the community board.
+- **Get in touch** through emergency numbers and a FAQ chat.
 
 ---
 
-## 📸 Así se ve la web desplegada
+## 🌐 Live demo on Vercel
 
-### Página de inicio con el hero y el saludo del peregrino
+The website is deployed on **Vercel** and can be visited here:
 
-![Página de inicio de Ultreia](https://res.cloudinary.com/duzljw2pp/image/upload/v1791450816/Captura_de_pantalla_2026-10-08_110606_chbfbv.png)
+👉 **[https://ultreia-eight.vercel.app](https://ultreia-eight.vercel.app)**
 
-### ¿Qué necesitas?
-
-![Parte ¿Qué necesitas?](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451008/Captura_de_pantalla_2026-10-08_111639_v8xgz7.png)
-
-### Nuestras 8 áreas de impacto
-
-![Parte de zonas de impacto](https://res.cloudinary.com/dfhwxnhsl/image/upload/v1791482295/cards_jhxde2.png)
-
-### Tablón comunitario y mapa
-
-![Tablón comunitario y mapa](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451215/Captura_de_pantalla_2026-10-08_112007_rlyuec.png)
-
-### Incidencias y footer
-
-![Parte de incidencias y footer](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451319/Captura_de_pantalla_2026-10-08_112152_q2f1kz.png)
-
-### Página de contacto y ayuda
-
-![Página de contacto](https://res.cloudinary.com/duzljw2pp/image/upload/v1791455264/Captura_de_pantalla_2026-10-08_122722_auim1c.png)
-
-### Página de información legal
-
-![Parte de información legal](https://res.cloudinary.com/dfhwxnhsl/image/upload/v1791482619/legal2_dk3w86.png)
-
+> The deployment is connected to the GitHub repository: every change pushed to the `main` branch is published automatically.
 
 ---
 
-## 🎨 Diseño en Figma
+## 📸 Screenshots of the deployed site
 
-Antes de programar, diseñamos la web en **Figma** siguiendo la metodología de **Atomic Design** (átomos, moléculas, organismos y páginas).
+### Home page with the hero and the pilgrim's greeting
 
-🔗 **[Ver el diseño en Figma](https://www.figma.com/design/3qCr2xarjgeDtZd6AghsSY/Ultreia?node-id=6-5&t=gLfOmk1ekCxSwrUW-0)**
+![Ultreia home page](https://res.cloudinary.com/duzljw2pp/image/upload/v1791450816/Captura_de_pantalla_2026-10-08_110606_chbfbv.png)
 
-### Tipografía
+### What do you need?
 
-- **Plus Jakarta Sans** → tipografía principal (pesos 400 a 800).
-- **Caveat** → detalles manuscritos.
+![What do you need section](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451008/Captura_de_pantalla_2026-10-08_111639_v8xgz7.png)
+
+### Our 8 impact areas
+
+![Impact areas section](https://res.cloudinary.com/dfhwxnhsl/image/upload/v1791482295/cards_jhxde2.png)
+
+### Community board and map
+
+![Community board and map](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451215/Captura_de_pantalla_2026-10-08_112007_rlyuec.png)
+
+### Incident reporting and footer
+
+![Incident reporting and footer](https://res.cloudinary.com/duzljw2pp/image/upload/v1791451319/Captura_de_pantalla_2026-10-08_112152_q2f1kz.png)
+
+### Contact and help page
+
+![Contact page](https://res.cloudinary.com/duzljw2pp/image/upload/v1791455264/Captura_de_pantalla_2026-10-08_122722_auim1c.png)
+
+### Legal information page
+
+![Legal information page](https://res.cloudinary.com/dfhwxnhsl/image/upload/v1791482619/legal2_dk3w86.png)
 
 ---
 
-## 🛠️ Stack utilizado
+## 🎨 Figma design
 
-| Tecnología | Uso |
+Before writing any code, we designed the website in **Figma** following the **Atomic Design** methodology (atoms, molecules, organisms and pages).
+
+🔗 **[View the design in Figma](https://www.figma.com/design/3qCr2xarjgeDtZd6AghsSY/Ultreia?node-id=6-5&t=gLfOmk1ekCxSwrUW-0)**
+
+### Typography
+
+- **Plus Jakarta Sans** → main typeface (weights 400 to 800).
+- **Caveat** → handwritten details.
+
+---
+
+## 🛠️ Tech stack
+
+| Technology | Purpose |
 |---|---|
-| **HTML5** | Estructura semántica de las páginas |
-| **CSS3** | Estilos, maquetación, animaciones y diseño responsive |
-| **Figma** | Diseño de la interfaz y prototipo |
-| **Trello** | Organización de tareas del equipo |
-| **Git y GitHub** | Control de versiones y trabajo en equipo por ramas |
-| **Vercel** | Despliegue de la web |
-| **Cloudinary** | Alojamiento de las imágenes |
+| **HTML5** | Semantic page structure |
+| **CSS3** | Styling, layout, animations and responsive design |
+| **Figma** | Interface design and prototype |
+| **Trello** | Team task management |
+| **Git & GitHub** | Version control and branch-based teamwork |
+| **Vercel** | Website deployment |
+| **Cloudinary** | Image hosting |
 
-> 💡 El proyecto está hecho **solo con HTML y CSS, sin JavaScript**. Todas las interacciones (tarjetas que giran, chat de preguntas, animaciones) están resueltas con CSS.
+> 💡 The project is built **with HTML and CSS only, no JavaScript**. All interactions (flip cards, FAQ chat, animations) are handled with CSS.
 
-### 📚 Librerías y recursos externos
+### 📚 Libraries and external resources
 
-| Librería | ¿Por qué la elegimos? |
+| Library | Why we chose it |
 |---|---|
-| **[Google Fonts](https://fonts.google.com/)** | Para cargar Plus Jakarta Sans y Caveat de forma rápida y gratuita. |
-| **[Remix Icon](https://remixicon.com/)** | Iconos modernos y limpios que encajan con el estilo de la web (tarjetas, flechas, avisos). |
-| **[Font Awesome](https://fontawesome.com/)** | Iconos de redes sociales para el footer. |
-| **[Cloudinary](https://cloudinary.com/)** | Para alojar las imágenes en la nube y no cargar el repositorio con archivos pesados. |
+| **[Google Fonts](https://fonts.google.com/)** | To load Plus Jakarta Sans and Caveat quickly and for free. |
+| **[Remix Icon](https://remixicon.com/)** | Clean, modern icons that match the style of the site (cards, arrows, alerts). |
+| **[Font Awesome](https://fontawesome.com/)** | Social media icons for the footer. |
+| **[Cloudinary](https://cloudinary.com/)** | To host images in the cloud and keep heavy files out of the repository. |
 
 ---
 
-## 🏗️ Arquitectura del proyecto
+## 🏗️ Project architecture
 
 ```
 Ultreia/
-├── index.html      → Página principal
-├── contact.html    → Página de contacto y ayuda
-├── styles.css      → Hoja de estilos compartida por todas las páginas
-└── README.md       → Documentación del proyecto
+├── index.html      → Home page
+├── contact.html    → Contact and help page
+├── styles.css      → Stylesheet shared by all pages
+└── README.md       → Project documentation
 ```
 
-### Secciones de la página principal
+### Home page sections
 
-| Sección | Descripción |
+| Section | Description |
 |---|---|
-| **Nav** | Logo, menú de navegación y botones de acceso |
-| **Hero** | Imagen principal con el lema *«El Camino lo hacemos entre todos»* |
-| **Saludo del peregrino** | Explicación del origen del nombre Ultreia |
-| **¿Qué necesitas?** | Cuatro accesos rápidos: necesito ayuda, quiero ayudar, quiero ofrecer y no camino solo |
-| **Áreas de impacto** | Ocho tarjetas que giran al pasar el ratón con información de cada área |
-| **Tablón comunitario y mapa** | Últimas publicaciones de la comunidad y mapa de recursos |
-| **Incidencias** | Llamada a la acción para informar de problemas en el Camino |
-| **Footer** | Navegación, áreas, información legal y créditos |
+| **Nav** | Logo, navigation menu and action buttons |
+| **Hero** | Main image with the motto *"We walk the Camino together"* |
+| **Pilgrim's greeting** | Explains the origin of the name Ultreia |
+| **What do you need?** | Four quick links: I need help, I want to help, I want to offer and I don't walk alone |
+| **Impact areas** | Eight cards that flip on hover with information about each area |
+| **Community board and map** | Latest community posts and a resource map |
+| **Incidents** | Call to action to report problems on the Camino |
+| **Footer** | Navigation, impact areas, legal information and credits |
 
-### Página de contacto
+### Contact page
 
-| Sección | Descripción |
+| Section | Description |
 |---|---|
-| **Cabecera** | *«Estamos contigo en el Camino»* |
-| **Teléfonos de emergencia** | 112, 062, 091 y 061 |
-| **Chat Ultreia** | Preguntas frecuentes desplegables hechas con `<details>` y `<summary>` |
-| **Otras formas de contactar** | Teléfono, correo y horario |
+| **Header** | *"We're with you on the Camino"* |
+| **Emergency numbers** | 112, 062, 091 and 061 |
+| **Ultreia chat** | Expandable FAQs built with `<details>` and `<summary>` |
+| **Other ways to contact us** | Phone, email and opening hours |
 
 ---
 
-## ✨ Buenas prácticas aplicadas
+## ✨ Good practices
 
-- **HTML semántico**: uso de `<header>`, `<section>`, `<footer>`, `<details>`...
-- **Accesibilidad**: textos alternativos (`alt`) en las imágenes y `aria-label` en los iconos de redes sociales.
-- **Nomenclatura en camelCase** para todas las clases (`navMenu`, `heroTitle`...).
-- **CSS organizado por secciones**, con comentarios que indican cada bloque.
-- **Diseño responsive** con *Flexbox*, *CSS Grid* y *media queries* para móvil, tablet y escritorio.
-- **Animaciones con CSS puro**: `@keyframes`, `transition` y `transform`.
-- **Ramas y commits en inglés**, con mensajes claros que describen cada cambio.
-- **Imágenes optimizadas** y alojadas en Cloudinary.
+- **Semantic HTML**: use of `<header>`, `<section>`, `<footer>`, `<details>`...
+- **Accessibility**: alternative text (`alt`) on images and `aria-label` on social media icons.
+- **camelCase naming** for all classes (`navMenu`, `heroTitle`...).
+- **CSS organised by sections**, with comments marking each block.
+- **Responsive design** with *Flexbox*, *CSS Grid* and *media queries* for mobile, tablet and desktop.
+- **Pure CSS animations**: `@keyframes`, `transition` and `transform`.
+- **Branches and commits in English**, with clear messages describing each change.
+- **Optimised images** hosted on Cloudinary.
 
 ---
 
-## 🚀 Instalación y uso
+## 🚀 Installation and usage
 
-Este proyecto **no necesita instalar dependencias** ni archivo `.env`, porque es una web estática con HTML y CSS.
+This project **doesn't require installing any dependencies** or a `.env` file, since it is a static website built with HTML and CSS.
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Daniel-Chaves-Dominguez/Ultreia.git
 cd Ultreia
 ```
 
-### 2. Abrir el proyecto
+### 2. Open the project
 
-**Opción A · Con Visual Studio Code y Live Server (recomendado)**
+**Option A · With Visual Studio Code and Live Server (recommended)**
 
-1. Abre la carpeta del proyecto en **VS Code**.
-2. Instala la extensión **Live Server**.
-3. Haz clic derecho en `index.html` → **Open with Live Server**.
+1. Open the project folder in **VS Code**.
+2. Install the **Live Server** extension.
+3. Right-click `index.html` → **Open with Live Server**.
 
-**Opción B · Directamente en el navegador**
+**Option B · Directly in the browser**
 
-Haz doble clic en `index.html`.
+Double-click `index.html`.
 
-> ⚠️ Necesitas conexión a internet para que carguen las fuentes, los iconos y las imágenes, que se sirven desde Google Fonts, Remix Icon, Font Awesome y Cloudinary.
+> ⚠️ An internet connection is required to load the fonts, icons and images, which are served from Google Fonts, Remix Icon, Font Awesome and Cloudinary.
 
 ---
 
-## 🌿 Control de versiones
+## 🌿 Version control
 
-Trabajamos con **Git y GitHub**, con **una rama por cada sección** de la web. Cuando una sección estaba terminada, se unía a `main`.
+We worked with **Git and GitHub**, using **one branch per section** of the website. Once a section was finished, it was merged into `main`.
 
-| Rama | Sección | Responsable |
+| Branch | Section | Owner |
 |---|---|---|
-| `navbar` | Navegación | Alba |
+| `navbar` | Navigation | Alba |
 | `hero` | Hero | Alba |
-| `pilgrimGreeting` | Saludo del peregrino | Daniel |
-| `whatDoYouNeed` | ¿Qué necesitas? | Daniel |
-| `cards` | Áreas de impacto | Melissa |
-| `community-board` | Tablón comunitario y mapa | Alba |
-| `incident` | Incidencias | Daniel |
+| `pilgrimGreeting` | Pilgrim's greeting | Daniel |
+| `whatDoYouNeed` | What do you need? | Daniel |
+| `cards` | Impact areas | Melissa |
+| `community-board` | Community board and map | Alba |
+| `incident` | Incidents | Daniel |
 | `footer` | Footer | Melissa |
 
-**Flujo que hemos seguido:**
+**Workflow we followed:**
 
 ```
 main
@@ -225,80 +224,80 @@ main
 ```bash
 git checkout main
 git pull
-git checkout -b nombre-de-la-rama
-# ...cambios...
+git checkout -b branch-name
+# ...changes...
 git add .
 git commit -m "Add navbar with logo, menu and buttons"
-git push -u origin nombre-de-la-rama
+git push -u origin branch-name
 ```
 
-### ⚠️ Mejora detectada
+### ⚠️ Improvement identified
 
-Creamos las ramas de cada sección **directamente desde `main`**. Lo correcto habría sido usar una rama intermedia **`dev`** (desarrollo), de forma que `main` solo reciba versiones estables y revisadas:
+We created each section's branch **directly from `main`**. The correct approach would have been to use an intermediate **`dev`** (development) branch, so that `main` only receives stable, reviewed versions:
 
 ```
-main  ← solo versiones estables
- └── dev  ← aquí se integran y prueban las secciones
+main  ← stable versions only
+ └── dev  ← sections are integrated and tested here
       ├── navbar
       ├── hero
       ├── ...
       └── footer
 ```
 
-Así, si algo falla al unir una sección, el error se queda en `dev` y la web publicada en `main` (y en Vercel) no se rompe. Lo aplicaremos en los próximos proyectos.
+This way, if something breaks when merging a section, the error stays in `dev` and the published site on `main` (and on Vercel) keeps working. We will apply this in future projects.
 
 ---
 
-## 📋 Metodología
+## 📋 Methodology
 
-Seguimos una metodología **ágil inspirada en Scrum**:
+We followed an **agile methodology inspired by Scrum**:
 
-- **Trello** para organizar las tareas en columnas (*Pendiente*, *En proceso*, *Hecho*).
-- **Reparto de tareas por secciones**, para que cada miembro trabajara en paralelo sin pisar el trabajo de los demás.
-- **Revisiones en equipo** antes de unir cada rama a `main`.
+- **Trello** to organise tasks into columns (*To do*, *In progress*, *Done*).
+- **Tasks split by section**, so each team member could work in parallel without overwriting each other's work.
+- **Team reviews** before merging each branch into `main`.
 
-🔗 **[Ver el tablero de Trello](https://trello.com/b/A9NZHmCw/ultreia)**
-
----
-
-## 🧠 Lo aprendido
-
-- Trabajar en equipo con **Git y GitHub usando ramas**, y resolver conflictos.
-- La importancia de tener una rama **`dev`** entre `main` y las ramas de trabajo, para proteger la versión publicada.
-- Pasar un diseño de **Figma a código** respetando colores, tipografía y espaciados.
-- Crear **interacciones y animaciones solo con CSS**, sin JavaScript.
-- Maquetar con **Flexbox y Grid** y adaptar la web a distintas pantallas.
-- Organizar el código con una **nomenclatura común** (camelCase) para que todo el equipo lo entienda.
-- **Desplegar** una web en Vercel.
+🔗 **[View the Trello board](https://trello.com/b/A9NZHmCw/ultreia)**
 
 ---
 
-## 🔭 Próximos pasos
+## 🧠 What we learned
 
-- [ ] Trabajar con el flujo **`main` → `dev` → ramas de trabajo**.
-- [ ] Añadir **JavaScript** para que los filtros del mapa y el chat sean interactivos.
-- [ ] Conectar los formularios a un **back-end** para guardar solicitudes e incidencias.
-- [ ] Integrar un **mapa interactivo** real con la ubicación de los recursos.
-- [ ] Crear un **sistema de usuarios** para publicar en el tablón comunitario.
-- [ ] Traducir la web a otros idiomas (**inglés, gallego, portugués**), pensando en peregrinos de todo el mundo.
-- [ ] Mejorar la **accesibilidad** con pruebas de contraste y navegación por teclado.
+- Working as a team with **Git and GitHub using branches**, and resolving conflicts.
+- The importance of having a **`dev`** branch between `main` and the working branches to protect the published version.
+- Turning a **Figma design into code** while respecting colours, typography and spacing.
+- Building **interactions and animations with CSS only**, without JavaScript.
+- Creating layouts with **Flexbox and Grid** and adapting the site to different screen sizes.
+- Organising code with a **shared naming convention** (camelCase) so the whole team can understand it.
+- **Deploying** a website on Vercel.
 
 ---
 
-## 👥 Equipo
+## 🔭 Next steps
 
-| | Nombre | LinkedIn |
+- [ ] Work with the **`main` → `dev` → feature branches** workflow.
+- [ ] Add **JavaScript** to make the map filters and the chat interactive.
+- [ ] Connect the forms to a **back-end** to store requests and incident reports.
+- [ ] Integrate a real **interactive map** showing the location of resources.
+- [ ] Build a **user system** so people can post on the community board.
+- [ ] Translate the site into other languages (**English, Galician, Portuguese**) for pilgrims from all over the world.
+- [ ] Improve **accessibility** with contrast checks and keyboard navigation.
+
+---
+
+## 👥 Team
+
+| | Name | Profile |
 |---|---|---|
 | 👩‍💻 | **Alba Ruiz de la Vega** | [LinkedIn](https://www.linkedin.com/in/alba-ruiz-de-la-vega-765b21384/) |
-| 👨‍💻 | **Daniel Chaves Domínguez** | [LinkedIn](https://github.com/Daniel-Chaves-Dominguez) |
+| 👨‍💻 | **Daniel Chaves Domínguez** | [GitHub](https://github.com/Daniel-Chaves-Dominguez) |
 | 👩‍💻 | **Melissa Guerrero** | [LinkedIn](https://www.linkedin.com/in/melissafguerreroc/) |
 
 ---
 
 <div align="center">
 
-**¡Ultreia et suseia!** 🐚
+**Ultreia et suseia!** 🐚
 
-© 2026 Ultreia. Todos los derechos reservados.
+© 2026 Ultreia. All rights reserved.
 
 </div>
