@@ -87,7 +87,7 @@ The website is deployed on **Vercel** and can be visited here:
 
 Before writing any code, we designed the website in **Figma** following the **Atomic Design** methodology (atoms, molecules, organisms and pages).
 
- **[View the design in Figma](https://www.figma.com/design/3qCr2xarjgeDtZd6AghsSY/Ultreia?node-id=6-5&t=gLfOmk1ekCxSwrUW-0)**
+ **[View the design in Figma]([(https://www.figma.com/design/3qCr2xarjgeDtZd6AghsSY/Ultreia?node-id=58-126&t=UQYLRJXZNWBsbbef-1)]**
 
 ### Typography
 
