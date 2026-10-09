@@ -63,7 +63,7 @@ The website is deployed on **Vercel** and can be visited here:
 
 ### Our 8 impact areas
 
-![Impact areas section](https://res.cloudinary.com/dfhwxnhsl/image/upload/v1791482295/cards_jhxde2.png)
+![Impact areas section](https://res.cloudinary.com/duzljw2pp/image/upload/v1791529521/Captura_de_pantalla_2026-10-09_090426_u5qvti.png)
 
 ### Community board and map
 
@@ -79,7 +79,7 @@ The website is deployed on **Vercel** and can be visited here:
 
 ### Legal information page
 
-![Legal information page](https://res.cloudinary.com/dfhwxnhsl/image/upload/v1791482619/legal2_dk3w86.png)
+![Legal information page](https://res.cloudinary.com/duzljw2pp/image/upload/v1791529537/Captura_de_pantalla_2026-10-09_090506_lntvjm.png)
 
 ---
 
