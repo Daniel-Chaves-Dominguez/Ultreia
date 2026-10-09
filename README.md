@@ -8,7 +8,7 @@
 
 A community web platform that connects pilgrims on the Camino de Santiago with locals, volunteers and local businesses, so that no one walks the Camino alone.
 
-[🌐 Live demo](#-live-demo-on-vercel) · [🎨 Figma design](#-figma-design) · [👥 Team](#-team)
+[ Live demo](#-live-demo-on-vercel) · [ Figma design](#-figma-design) · [ Team](#-team)
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/Daniel-Chaves-Dominguez/Ultreia/blob/main/index.html)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/Daniel-Chaves-Dominguez/Ultreia/blob/main/styles.css)
@@ -20,15 +20,15 @@ A community web platform that connects pilgrims on the Camino de Santiago with l
 
 ---
 
-## 📌 What is Ultreia?
+##  What is Ultreia?
 
 **Ultreia** is a community support website for the Camino de Santiago. Its name comes from the medieval pilgrims' greeting: one would say *"Ultreia!"* (further!) and the other would reply *"Et suseia!"* (and higher!).
 
-### ❓ What problem does it solve?
+###  What problem does it solve?
 
 Along the Camino, pilgrims face problems they don't always know who to report to: a fountain with no water, a closed path, an injury, not finding accommodation or simply not wanting to walk alone. On top of that, information about resources (accommodation, services, accessibility, pets...) is scattered across many places.
 
-### ✅ Main features
+###  Main features
 
 Ultreia brings together in one place **those who need help** and **those who can offer it**:
 
@@ -41,17 +41,17 @@ Ultreia brings together in one place **those who need help** and **those who can
 
 ---
 
-## 🌐 Live demo on Vercel
+##  Live demo on Vercel
 
 The website is deployed on **Vercel** and can be visited here:
 
-👉 **[https://ultreia-eight.vercel.app](https://ultreia-eight.vercel.app)**
+ **[https://ultreia-eight.vercel.app](https://ultreia-eight.vercel.app)**
 
 > The deployment is connected to the GitHub repository: every change pushed to the `main` branch is published automatically.
 
 ---
 
-## 📸 Screenshots of the deployed site
+##  Screenshots of the deployed site
 
 ### Home page with the hero and the pilgrim's greeting
 
@@ -83,11 +83,11 @@ The website is deployed on **Vercel** and can be visited here:
 
 ---
 
-## 🎨 Figma design
+##  Figma design
 
 Before writing any code, we designed the website in **Figma** following the **Atomic Design** methodology (atoms, molecules, organisms and pages).
 
-🔗 **[View the design in Figma](https://www.figma.com/design/3qCr2xarjgeDtZd6AghsSY/Ultreia?node-id=6-5&t=gLfOmk1ekCxSwrUW-0)**
+ **[View the design in Figma](https://www.figma.com/design/3qCr2xarjgeDtZd6AghsSY/Ultreia?node-id=6-5&t=gLfOmk1ekCxSwrUW-0)**
 
 ### Typography
 
@@ -96,7 +96,7 @@ Before writing any code, we designed the website in **Figma** following the **At
 
 ---
 
-## 🛠️ Tech stack
+##  Tech stack
 
 | Technology | Purpose |
 |---|---|
@@ -108,9 +108,9 @@ Before writing any code, we designed the website in **Figma** following the **At
 | **Vercel** | Website deployment |
 | **Cloudinary** | Image hosting |
 
-> 💡 The project is built **with HTML and CSS only, no JavaScript**. All interactions (flip cards, FAQ chat, animations) are handled with CSS.
+>  The project is built **with HTML and CSS only, no JavaScript**. All interactions (flip cards, FAQ chat, animations) are handled with CSS.
 
-### 📚 Libraries and external resources
+###  Libraries and external resources
 
 | Library | Why we chose it |
 |---|---|
@@ -121,7 +121,7 @@ Before writing any code, we designed the website in **Figma** following the **At
 
 ---
 
-## 🏗️ Project architecture
+##  Project architecture
 
 ```
 Ultreia/
@@ -155,7 +155,7 @@ Ultreia/
 
 ---
 
-## ✨ Good practices
+##  Good practices
 
 - **Semantic HTML**: use of `<header>`, `<section>`, `<footer>`, `<details>`...
 - **Accessibility**: alternative text (`alt`) on images and `aria-label` on social media icons.
@@ -168,7 +168,7 @@ Ultreia/
 
 ---
 
-## 🚀 Installation and usage
+##  Installation and usage
 
 This project **doesn't require installing any dependencies** or a `.env` file, since it is a static website built with HTML and CSS.
 
@@ -191,11 +191,11 @@ cd Ultreia
 
 Double-click `index.html`.
 
-> ⚠️ An internet connection is required to load the fonts, icons and images, which are served from Google Fonts, Remix Icon, Font Awesome and Cloudinary.
+>  An internet connection is required to load the fonts, icons and images, which are served from Google Fonts, Remix Icon, Font Awesome and Cloudinary.
 
 ---
 
-## 🌿 Version control
+##  Version control
 
 We worked with **Git and GitHub**, using **one branch per section** of the website. Once a section was finished, it was merged into `main`.
 
@@ -231,7 +231,7 @@ git commit -m "Add navbar with logo, menu and buttons"
 git push -u origin branch-name
 ```
 
-### ⚠️ Improvement identified
+###  Improvement identified
 
 We created each section's branch **directly from `main`**. The correct approach would have been to use an intermediate **`dev`** (development) branch, so that `main` only receives stable, reviewed versions:
 
@@ -248,7 +248,7 @@ This way, if something breaks when merging a section, the error stays in `dev` a
 
 ---
 
-## 📋 Methodology
+##  Methodology
 
 We followed an **agile methodology inspired by Scrum**:
 
@@ -256,11 +256,11 @@ We followed an **agile methodology inspired by Scrum**:
 - **Tasks split by section**, so each team member could work in parallel without overwriting each other's work.
 - **Team reviews** before merging each branch into `main`.
 
-🔗 **[View the Trello board](https://trello.com/b/A9NZHmCw/ultreia)**
+ **[View the Trello board](https://trello.com/b/A9NZHmCw/ultreia)**
 
 ---
 
-## 🧠 What we learned
+##  What we learned
 
 - Working as a team with **Git and GitHub using branches**, and resolving conflicts.
 - The importance of having a **`dev`** branch between `main` and the working branches to protect the published version.
@@ -272,7 +272,7 @@ We followed an **agile methodology inspired by Scrum**:
 
 ---
 
-## 🔭 Next steps
+##  Next steps
 
 - [ ] Work with the **`main` → `dev` → feature branches** workflow.
 - [ ] Add **JavaScript** to make the map filters and the chat interactive.
@@ -284,19 +284,19 @@ We followed an **agile methodology inspired by Scrum**:
 
 ---
 
-## 👥 Team
+##  Team
 
 | | Name | Profile |
 |---|---|---|
-| 👩‍💻 | **Alba Ruiz de la Vega** | [LinkedIn](https://www.linkedin.com/in/alba-ruiz-de-la-vega-765b21384/) |
-| 👨‍💻 | **Daniel Chaves Domínguez** | [GitHub](https://github.com/Daniel-Chaves-Dominguez) |
-| 👩‍💻 | **Melissa Guerrero** | [LinkedIn](https://www.linkedin.com/in/melissafguerreroc/) |
+|  | **Alba Ruiz de la Vega** | [LinkedIn](https://www.linkedin.com/in/alba-ruiz-de-la-vega-765b21384/) |
+|  | **Daniel Chaves Domínguez** | [GitHub](https://github.com/Daniel-Chaves-Dominguez) |
+|  | **Melissa Guerrero** | [LinkedIn](https://www.linkedin.com/in/melissafguerreroc/) |
 
 ---
 
 <div align="center">
 
-**Ultreia et suseia!** 🐚
+**Ultreia et suseia!** 
 
 © 2026 Ultreia. All rights reserved.
 
